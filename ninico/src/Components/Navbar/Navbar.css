@@ -1,0 +1,140 @@
+/* tag css */
+li{
+    margin-top: 7px;
+}
+
+ul{
+    width: 200px;
+}
+
+/* -------------------------------------------- */
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-cnt{
+    box-shadow: 1px 1px 4px 2px rgb(160, 158, 158);
+    display: none;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-cnt{
+    display: inline-block;
+    /* border-radius: 5px; */
+}
+
+.dropdown:hover .dropdown-toggle{
+    rotate: calc(180deg);
+    transition:  1s;
+    color: red;
+}
+
+
+/* navbar no home menu in css */
+/* -------------------------------- */
+.dropdown-home{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-home-cnt{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(255, 254, 252);
+    border-top: 3px solid #d51243;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown-home:hover .dropdown-home-cnt{
+    display: inline-block;
+    
+}
+
+/* navbar no Shop menu in css */
+/* -------------------------------- */
+
+.dropdown-shop{
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-shop-cnt{
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: rgb(255, 254, 252);
+    border-top: 3px solid #d51243;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown-shop:hover .dropdown-shop-cnt{
+    display: inline-block;
+}
+
+/* navbar no Pages menu in css */
+/* -------------------------------- */
+
+.dropdown-page{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-page-cnt{
+    margin-top: 10px;
+    padding:  20px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 254, 252);
+    border-top: 3px solid #d51243;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+.dropdown-page:hover .dropdown-page-cnt{
+    display: block;
+}
+
+/* navbar nu Blog menu in css */
+/* -------------------------------- */
+
+.dropdown-blog{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-blog-cnt{
+    margin-top: 10px;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 300px;
+    background-color: rgb(255, 254, 252);
+    border-top: 3px solid #d51243;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dropdown-blog:hover .dropdown-blog-cnt{
+    display: inline;
+}
+
+
+
+
+
+
+
+
