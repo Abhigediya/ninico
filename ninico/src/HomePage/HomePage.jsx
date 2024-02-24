@@ -103,7 +103,6 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 "></div>
 
-            <div className="">
               <div className="w-36 group">
                 <div className="ctgimg">
                   <img src={ChristmanTree} alt="123" />
@@ -111,7 +110,6 @@ const HomePage = () => {
                 </div>
                 <div className=" text-center">Driftwood Christmas Tree </div>
               </div>
-            </div>
 
             <div className="border-s border-slate-200 h-48 "></div>
 
@@ -270,7 +268,7 @@ const HomePage = () => {
             </div>
           </div>
 
-        </section>s
+        </section>
 
         <div className="mb-96"></div>
         

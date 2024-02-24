@@ -23,7 +23,6 @@ const Navbar = () => {
     <>
       <nav className=' mx-12 mt-3   items-center md:flex md:justify-between sm:flex sm:justify-arond sm:container sm:mx-auto  '>
 
-    {/* <button className='bg-red-300 px-3 p-2' onClick={toggle} >  CLick me</button> */}
 
     
         <div className="flex" >
@@ -82,7 +81,7 @@ const Navbar = () => {
 
         </div>
 
-      
+
 
       </nav>
 
@@ -146,9 +145,7 @@ const Navbar = () => {
 
 
           <ul className=" respo-nav flex xl:flex lg:hidden md:hidden ">
-            {/* <ul className=" respo-nav flex xl:flex lg:hidden md:hidden "> */}
-            <li className="ms-2 dropdown ">
-              {/* <div className="dropdown "> */}
+            <li className="ms-2 dropdown ">  
               <div className="flex p-3 ">
                 <div className="">
                   <span >Home</span>
@@ -165,10 +162,8 @@ const Navbar = () => {
                   <li>Food Grocery</li>
                 </ul>
               </div>
-              {/* </div> */}
             </li>
 
-            {/* <div className=""> */}
             <li className=" dropdown">
               <div className="flex p-3">
                 <span>Shop</span>
@@ -190,9 +185,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            {/* </div> */}
 
-            {/* <div className="mx-3  "> */}
             <li className=" dropdown">
               <div className="flex p-3">
                 <span>Pages</span>
@@ -227,9 +220,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            {/* </div> */}
 
-            {/* <div className=""> */}
             <li className=" dropdown">
               <div className="flex p-3 ">
                 <span>Blog</span>
@@ -242,7 +233,6 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            {/* </div> */}
 
             <li className="  ">
               <div className="p-3">Contact</div>
