@@ -7,11 +7,7 @@ function App() {
 
   return (
     <>
-      
-      
       <HomePage/>
-
-
     </>
   )
 }

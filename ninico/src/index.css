@@ -8,3 +8,15 @@
     }
   
   } */
+
+  @layer components {
+
+    .ctgnum{
+      @apply absolute -top-2 right-0 rounded-full bg-white p-2 w-10 text-center text-ninico font-bold group-hover:text-white group-hover:bg-ninico
+    }
+
+    .ctgimg{
+      @apply bg-slate-100 relative p-10 rounded-full w-32 flex  justify-center mx-auto
+    }
+
+  } 

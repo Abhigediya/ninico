@@ -15,27 +15,31 @@ import HappyIcon from '../../assets/HappyIcon.svg'
 import Futboll from '../../assets/Futboll.svg'
 import King from '../../assets/King.svg'
 import Gift from '../../assets/Gift.svg'
+import UserColor from '../../assets/UserColor.svg'
+
 
 const Navbar = () => {
   return (
     <>
-      <nav className='container mx-auto mt-3  flex justify-between  items-center  '>
+      <nav className=' mx-12 mt-3   items-center md:flex md:justify-between sm:flex sm:justify-arond sm:container sm:mx-auto  '>
 
+    {/* <button className='bg-red-300 px-3 p-2' onClick={toggle} >  CLick me</button> */}
 
+    
         <div className="flex" >
-          <div className="mx-4 mt-1 xl:hidden"><img src={Bar} width={30} alt="123" /></div>
+          <div className="mx-4 mt-1 xl:hidden "><img src={Bar} width={30} alt="123" /></div>
           <div className=""><img src={Logo} alt="" /></div>
         </div>
 
-        <div className="flex px-4 rounded-lg h-12  " style={{ backgroundColor: '#F3F4F7' }}>
+        <div className=" px-4 rounded-lg h-12 bg-search hidden md:flex   " >
           <img src={Search} className="" alt="123  " width={25} />
-          <input type="text" className=' w-96    h-12 ps-4 text-lg   ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
+          <input type="text" className=' lg:w-96 md:w-72 focus:outline-none   h-12 ps-4 text-lg  ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
         </div>
 
-        <div className="flex xl:flex lg:hidden md:hidden ">
+        <div className="flex xl:flex hidden   ">
           <button className='dropdown   '>
             <div className="">
-              <span className='flex align-center p-1 border border-slate-300 '>
+              <span className='flex  align-center p-1 border border-slate-300 '>
                 <img className=' ' src={Ukflag} alt="" width={40} />
                 <span className='mx-1 mt-2 '>English</span>
                 <img src={Dropdown} className="dropdown-toggle" alt="" width={30} />
@@ -78,25 +82,25 @@ const Navbar = () => {
 
         </div>
 
-
+      
 
       </nav>
 
-      <nav className='container mx-auto mt-3 flex justify-between'>
-        <div className="flex items-center">
+      <nav className='  mt-3 flex justify-between'>
+        <div className="flex items-center ">
 
-          <div className="p-3 px-5 dropdown flex rounded-md bg-ninico xl:flex  lg:hidden  md:hidden "  >
+          <div className="p-3 px-5 dropdown flex rounded-md bg-ninico xl:flex  hidden   ">
             <div className="flex  ">
               <div className=" ">
                 <img src={Bar} alt="" width={25} />
               </div>
               <div className="text-white ms-3">Categories</div>
             </div>
-            <div className="dropdown-cnt mt-10  w-[150px] py-4 px-2 absolute left-0 border-4 border-ninico rounded-bl-2xl rounded-br-2xl border-r-0 border-b-0 border-l-0 bg-white  ">
+            <div className="dropdown-cnt   ">
               <ul className=''>
                 <li className=''>
                   <div className="flex">
-                    <img src={User} width={20} alt="" />
+                    <img src={UserColor} width={20} alt="" />
                     <div className="ms-3 text-sm">Candles</div>
                   </div>
                 </li>
@@ -142,111 +146,111 @@ const Navbar = () => {
 
 
           <ul className=" respo-nav flex xl:flex lg:hidden md:hidden ">
-          {/* <ul className=" respo-nav flex xl:flex lg:hidden md:hidden "> */}
-            <li className="mx-5 dropdown ">
+            {/* <ul className=" respo-nav flex xl:flex lg:hidden md:hidden "> */}
+            <li className="ms-2 dropdown ">
               {/* <div className="dropdown "> */}
-                <div className="flex ">
-                  <div className="">
-                    <span >Home</span>
-                    <span className='border 2xl 2xl:hidden xl:hidden '>+</span>
-                  </div>
-                  <img src={Dropdown} width={30} alt="123" />
+              <div className="flex p-3 ">
+                <div className="">
+                  <span >Home</span>
+                  <span className='border 2xl 2xl:hidden xl:hidden '>+</span>
                 </div>
-                <div className="dropdown-cnt mt-4 py-4 px-5 absolute left-0 border-4 border-ninico rounded-bl-xl rounded-br-xl border-r-0 border-b-0 border-l-0 bg-white ">
-                  <ul className=''>
-                    <li>Wooden Home</li>
-                    <li>Fashion Home</li>
-                    <li>Furniture Home</li>
-                    <li>Cosmetics Home</li>
-                    <li>Food Grocery</li>
-                  </ul>
-                </div>
+                <img src={Dropdown} width={30} alt="123" />
+              </div>
+              <div className="dropdown-cnt  ">
+                <ul className='w-52'>
+                  <li>Wooden Home</li>
+                  <li>Fashion Home</li>
+                  <li>Furniture Home</li>
+                  <li>Cosmetics Home</li>
+                  <li>Food Grocery</li>
+                </ul>
+              </div>
               {/* </div> */}
             </li>
 
             {/* <div className=""> */}
-              <li className="mx-5 dropdown">
-                <div className="flex ">
-                  <span>Shop</span>
-                  <img src={Dropdown} width={30} alt="123" />
-                </div>
-                <div className="dropdown-cnt mt-4 py-4 px-5 absolute left-0 border-4 border-ninico rounded-bl-xl rounded-br-xl border-r-0 border-b-0 border-l-0 bg-white">
-                  <ul>
-                    <li>Shop</li>
-                    <li>Shop 2</li>
-                    <li>Shop Details</li>
-                    <li>Shop Details 2</li>
-                    <li>Shop Location</li>
-                    <li>Cart</li>
-                    <li>Sign in </li>
-                    <li>Checkout</li>
-                    <li>Wishlist</li>
-                    <li>Product Track</li>
-                    <li></li>
-                  </ul>
-                </div>
-              </li>
+            <li className=" dropdown">
+              <div className="flex p-3">
+                <span>Shop</span>
+                <img src={Dropdown} width={30} alt="123" />
+              </div>
+              <div className="dropdown-cnt ">
+                <ul className='w-52'>
+                  <li>Shop</li>
+                  <li>Shop 2</li>
+                  <li>Shop Details</li>
+                  <li>Shop Details 2</li>
+                  <li>Shop Location</li>
+                  <li>Cart</li>
+                  <li>Sign in </li>
+                  <li>Checkout</li>
+                  <li>Wishlist</li>
+                  <li>Product Track</li>
+                  <li></li>
+                </ul>
+              </div>
+            </li>
             {/* </div> */}
 
             {/* <div className="mx-3  "> */}
-              <li className="mx-5 dropdown">
-                <div className="flex">
-                  <span>Pages</span>
-                  <img src={Dropdown} width={30} alt="123" />
+            <li className=" dropdown">
+              <div className="flex p-3">
+                <span>Pages</span>
+                <img src={Dropdown} width={30} alt="123" />
+              </div>
+              <div className="dropdown-cnt  ">
+                <div className="flex ">
+                  <ul className='w-52'>
+                    <h3 className='font-semibold'>PAGE LAYOUT </h3>
+                    <li>Shop Filters V1</li>
+                    <li>Shop Filters V2</li>
+                    <li>Shop SideBar</li>
+                    <li>Shop Right Sidebar</li>
+                    <li>Shop List View</li>
+                    <li></li>
+                  </ul>
+                  <ul className='w-52'>
+                    <h3 className='font-semibold'>  PAGE LAYOUT  </h3>
+                    <li>About</li>
+                    <li>Cart</li>
+                    <li>Checkout</li>
+                    <li>Sign In</li>
+                    <li>Log In</li>
+                  </ul>
+                  <ul className='w-52'>
+                    <h3 className='font-semibold'>PAGE LAYOUT</h3>
+                    <li>Product Track</li>
+                    <li>Wishlist</li>
+                    <li>404 / Error</li>
+                    <li>Coming Soon</li>
+                  </ul>
                 </div>
-                <div className="dropdown-cnt mt-4 py-4 px-8 absolute left-0 border-4 border-ninico rounded-bl-xl rounded-br-xl border-r-0 border-b-0 border-l-0 bg-white ">
-                  <div className="flex ">
-                    <ul>
-                      <h3 className='font-semibold'>PAGE LAYOUT </h3>
-                      <li>Shop Filters V1</li>
-                      <li>Shop Filters V2</li>
-                      <li>Shop SideBar</li>
-                      <li>Shop Right Sidebar</li>
-                      <li>Shop List View</li>
-                      <li></li>
-                    </ul>
-                    <ul>
-                      <h3 className='font-semibold'>  PAGE LAYOUT  </h3>
-                      <li>About</li>
-                      <li>Cart</li>
-                      <li>Checkout</li>
-                      <li>Sign In</li>
-                      <li>Log In</li>
-                    </ul>
-                    <ul>
-                      <h3 className='font-semibold'>PAGE LAYOUT</h3>
-                      <li>Product Track</li>
-                      <li>Wishlist</li>
-                      <li>404 / Error</li>
-                      <li>Coming Soon</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
+              </div>
+            </li>
             {/* </div> */}
 
             {/* <div className=""> */}
-              <li className=" mx-5 dropdown">
-                <div className="flex">
-                  <span>Blog</span>
-                  <img src={Dropdown} width={30} alt="123" />
-                </div>
-                <div className="dropdown-cnt mt-4 py-4 px-5 absolute left-0 border-4 border-ninico rounded-bl-xl rounded-br-xl border-r-0 border-b-0 border-l-0 bg-white">
-                  <ul>
-                    <li>Blog</li>
-                    <li>Blog Details</li>
-                  </ul>
-                </div>
-              </li>
+            <li className=" dropdown">
+              <div className="flex p-3 ">
+                <span>Blog</span>
+                <img src={Dropdown} width={30} alt="123" />
+              </div>
+              <div className="dropdown-cnt ">
+                <ul className='w-32'>
+                  <li>Blog</li>
+                  <li>Blog Details</li>
+                </ul>
+              </div>
+            </li>
             {/* </div> */}
 
-            <li className="mx-5 ">
-              <div className="">Contact</div>
+            <li className="  ">
+              <div className="p-3">Contact</div>
             </li>
           </ul>
         </div>
 
-        <div className="flex  items-center justify-around xl:flex lg:hidden">
+        <div className="  items-center justify-around xl:flex hidden">
           <div className="flex items-center">
             <img src={Call} width={30} alt="" />
             <span className='font-bold  ms-1  '>908. 408. 504. 39</span>

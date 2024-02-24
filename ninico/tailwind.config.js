@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
+    screens:{
+      'xs': '320px',
+      'sm': '640px',
+      'md': '768px',
+      'lg' : '1024px',
+      'xl' : '1280px',
+      '2xl' : '1536px',
+    },
     
     extend: {
       colors: {
@@ -16,8 +25,15 @@ export default {
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
         'ninico' : '#d51243',
+        'ninico-two' : '#D61E4C',
+        'topBar' : '#F3EEE7',
+        'search' : '#F3F4F7',
         // 'white' : "FFFEFC",
       },
+
+      // screens:{
+        // 'xs':{'min':'300px'},
+      // }
     },
   },
   plugins: [],
