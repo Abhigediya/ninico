@@ -1,8 +1,10 @@
-import Navbar from "../Components/Navbar/Navbar"
 import TopBar from "../Components/TopBar/TopBar"
+import Navbar from "../Components/Navbar/Navbar"
+import Footer from "../Components/Footer/Footer"
+import PopularProduct from "../Components/PopularProduct/PopularProduct"
 
 // import all  images
-import SliderImgONe from '../assets/SliderImgONe.jpeg'
+import SliderImgOne from '../assets/SliderImgONe.jpeg'
 import HandmadeImg from '../assets/HandmadeImg.jpeg'
 import PopularImg from '../assets/PopularImg.jpeg'
 import Table from '../assets/Table.svg'
@@ -22,6 +24,8 @@ import StarBg from '../assets/StarBG.svg'
 import TimeImage from '../assets/TimeImage.png'
 import BradleyBurgressOne from '../assets/BradleyBurgessOne.jpeg'
 import BradleyBurgressTwo from '../assets/BradleyBurgessTwo.jpeg'
+import AllieSharpOne from '../assets/AllieSharpOne.jpeg'
+import AllieSharpTwo from '../assets/AllieSharpTwo.jpeg'
 
 
 
@@ -29,30 +33,32 @@ const HomePage = () => {
   return (
     <>
       <TopBar />
-      <div className="container mx-12">
+      <div className="container mx-auto  ">
         <Navbar />
-        <div className="container flex mx-auto mt-1">
+        <div className=" md:flex sm:block mx-auto -mt-2">
           <div className="">
-            <img src={SliderImgONe} alt="" />
+            <img src={SliderImgOne} alt="" />
           </div>
-          <div className="ms-10">
+
+          <div className="ms-10 md:block md:justify-between">
             <div className="relative" >
-              <div className="overflow-hidden rounded-md">
-                <div className="hover:scale-105 duration-75 ease-in hover:overflow-hidden  ">
-                  <img src={HandmadeImg} alt="" width={300} />
+              <div className="overflow-hidden rounded-lg">
+                <div className="hover:scale-105 duration-75 ease-in         ">
+                  <img src={HandmadeImg} className=" md:w-[350px] sm:w-full mt-2 ms-0 p-0 " alt="" />
                 </div>
               </div>
 
-              <div className="absolute top-[5px] left-[10px]  "  >
-                <span className="text-ninico text-lg" >Hand made</span>
+              <div className="absolute top-[15px] left-[10px]  "  >
+                <span className="text-ninico " >Hand made</span>
                 <h2 className="font-medium text-xl pe-14" >New Mordern Stylist Craft </h2>
               </div>
             </div>
+
             <div className="mt-2">
               <div className="relative"  >
                 <div className="overflow-hidden  rounded-md">
-                  <div className="hover:scale-105 duration-75 ease-in hover:overflow-hidden  ">
-                    <img src={PopularImg} alt="" width={300} className="" />
+                  <div className="hover:scale-105 duration-75 ease-in   ">
+                    <img src={PopularImg} alt="123" className="md:w-[350px] sm:w-full  ms-0 p-0" />
                   </div>
                 </div>
                 <div className="absolute top-[10px] left-[10px]" >
@@ -65,87 +71,88 @@ const HomePage = () => {
         </div>
 
         <div className="height"></div>
-        s
+
         {/* Top Categories  & product section */}
 
         {/* ctgimg = 6 image it's class created */}
         {/* ctgnum = 6 number it's class created */}
+        {/* ctgtxt = 6 text it's class created */}
         <section className="mt-10">
           <div className="">
             <span className="text-2xl font-bold ">Top</span>
             <span className="ms-3 text-ninico text-xl border-b-4 border-ninico " >Categories</span>
           </div>
 
-          <div className="mt-10 flex justify-around  ">
+          <div className="mt-10 flex justify-between flex-wrap lg:flex-wrap md:flex-wrap  ">
 
             <div className="">
 
               <div className=" w-36 group">
-                <div className="ctgimg">
+                <div className="ctg-img">
                   <img src={Table} alt="123" />
-                  <div className=" ctgnum   ">20</div>
+                  <div className=" ctg-num   ">20</div>
                 </div>
-                <div className="text-center">Driftwood Table Deco </div>
+                <div className="ctg-txt">Driftwood Table Decor </div>
               </div>
             </div>
 
-            <div className="border-s border-slate-200 h-48 "></div>
+            <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
             <div className=" ">
               <div className="w-36 group ">
-                <div className="ctgimg">
+                <div className="ctg-img">
                   <img src={FloorDriftwood} alt="123" />
-                  <div className="  ctgnum  ">12</div>
+                  <div className="  ctg-num  ">12</div>
                 </div>
-                <div className="top-14 text-center">Floor Driftwood Sculputer</div>
+                <div className="ctg-txt">Floor Driftwood Sculputer</div>
               </div>
             </div>
 
-            <div className="border-s border-slate-200 h-48 "></div>
+            <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-              <div className="w-36 group">
-                <div className="ctgimg">
-                  <img src={ChristmanTree} alt="123" />
-                  <div className="  ctgnum   ">03</div>
-                </div>
-                <div className=" text-center">Driftwood Christmas Tree </div>
+            <div className="w-36 group">
+              <div className="ctg-img">
+                <img src={ChristmanTree} alt="123" />
+                <div className="  ctg-num   ">03</div>
               </div>
+              <div className=" ctg-txt ">Driftwood Christmas Tree </div>
+            </div>
 
-            <div className="border-s border-slate-200 h-48 "></div>
+            <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
             <div className=" ">
               <div className="w-36 group">
-                <div className="ctgimg">
+                <div className="ctg-img">
                   <img src={BluetoothSpeaker} alt="123" />
-                  <div className=" ctgnum   ">09</div>
+                  <div className=" ctg-num   ">09</div>
                 </div>
-                <div className=" text-center">Wooden Bluetooth Speaker </div>
+                <div className=" ctg-txt ">Wooden Bluetooth Speaker </div>
               </div>
             </div>
 
-            <div className="border-s  border-slate-200 h-48 "></div>
+            <div className="border-s  border-slate-200 h-48 hidden xl:block "></div>
 
             <div className=" ">
               <div className="w-36 group">
                 <div className="bg-slate-100 relative p-10  rounded-full w-32  mx-auto">
                   <img src={Receivers} alt="123" />
-                  <div className="  ctgnum  ">10</div>
+                  <div className="  ctg-num  ">10</div>
 
                 </div>
-                <div className=" text-center">Floor Driftwood Sculputer</div>
+                <div className=" ctg-txt">Reciivers Amplifiers</div>
               </div>
             </div>
 
-            <div className="border-s border-slate-200 h-48 "></div>
+            <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
             <div className="">
               <div className="w-36 group">
-                <div className="ctgimg">
+                <div className="ctg-img">
                   <img src={Appetizer} alt="123" />
-                  <div className="  ctgnum  ">05</div>
+                  <div className="  ctg-num  ">05</div>
 
                 </div>
-                <div className=" text-center">Floor Driftwood Sculputer</div>
+                <div className=" ctg-txt">Appetizer Plate Set</div>
               </div>
             </div>
 
@@ -157,7 +164,7 @@ const HomePage = () => {
 
         {/* Popular Products  */}
 
-        <section className="mt-14">
+        {/* <section className="mt-14">
           <div className="flex justify-between ">
             <div className="">
               <span className="text-2xl font-bold">Popular</span>
@@ -173,59 +180,75 @@ const HomePage = () => {
 
           </div>
 
-          <div className="mt-10 ">
-            <div className="  ">
-              <div className=" relative group ">
-
-                <img src={BradleyBurgressOne} className=' ' width={250} alt="123" />
-
-                <div className=" absolute top-12 group-hover:visible  group-hover:bg-ninico group-hover:border-red-300 border  ">
-                  <img src={Basket} width={30} alt="" />
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo id pariatur temporibus quibusdam! Assumenda aperiam, unde aliquam, nulla dolorum autem reprehenderit laborum iusto ea sint, illum nobis rem eveniet.
+          <div className="mt-10 flex justify-between ">
+            <div className="">
+              <div className=" group group-hover:p-2  ">
+                <div className=" relative  outer   ">
+                  <img src={BradleyBurgressOne} className=' ' width={250} alt="123" />
+                  <div className=" group inner absolute top-0 left-0 hidden ">
+                    <img src={BradleyBurgressTwo} width={250} alt="123" />
+                    <div className=" flex justify-center   ">
+                      <div className="   absolute  flex justify-center top-32     group-hover:block hidden group-hover:bg-white   ">
+                        <div className="flex justify-around    py-2 px-3">
+                          <img src={Basket} width={30} alt="" />
+                          <img src={DoubleArrow} className="rotate-90 mx-3 " width={25} alt="" />
+                          <img src={Eyes} width={30} alt="" />
+                          <img src={Heart} className="ms-3" width={35} alt="" />
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div className="group  hover-w-80 hover:z-[1]">
+                    <div className="group-hover:text-ninico">Bradley Burgess 2 </div>
+                    <div className="font-bold">$20.00</div>
+                    <div className="mt-3 flex justify-between  ">
+                      <div className="flex">
+                        <div className="  hidden group-hover:block hover:h-4 border-cyan-300 border hover:w-4  rounded-full flex justify-center items-center hover:border-cyan-300 duration-100 ease-in-out ">
+                          <div className=" bg-cyan-300  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
+                        </div>
+                        <div className=" mx-1 hidden group-hover:block  hover:h-4 border-red-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-red-600 duration-100 ease-in-out ">
+                          <div className=" bg-red-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
+                        </div>
+                        <div className=" hidden group-hover:block hover:h-4 border-amber-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-amber-500 duration-100 ease-in-out ">
+                          <div className=" bg-amber-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
+                        </div>
+                        <div className=" hidden group-hover:block mx-1  hover:h-4 border-violet-400 border hover:w-4  rounded-full flex justify-center items-center hover:border-violet-400 duration-100 ease-in-out ">
+                          <div className=" bg-violet-400  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
+                        </div>
+                      </div>
+                      <div className="flex hidden group-hover:flex">
+                        <img src={StarBg} width={12} alt="123" />
+                        <img src={StarBg} width={12} alt="123" />
+                        <img src={StarBg} width={12} alt="123" />
+                        <img src={StarBg} width={12} alt="123" />
+                        <img src={StarBorder} width={12} alt="123" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
               </div>
               <div className="">
-                <div className="hover:text-ninico">Bradley Burgess 2 </div>
-                <div className="font-bold">$20.00</div>
+                <div className="relative group">
+                  <img src={AllieSharpOne} width={250} alt="" />
 
-                <div className="mt-3 flex ">
-                  <div className="flex">
-
-                    <div className="  hover:h-4 border-cyan-300 border hover:w-4  rounded-full flex justify-center items-center hover:border-cyan-300 duration-100 ease-in-out ">
-                      <div className=" bg-cyan-300  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
-                    </div>
-
-                    <div className=" mx-1  hover:h-4 border-red-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-red-600 duration-100 ease-in-out ">
-                      <div className=" bg-red-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
-                    </div>
-
-                    <div className=" hover:h-4 border-amber-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-amber-500 duration-100 ease-in-out ">
-                      <div className=" bg-amber-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
-                    </div>
-
-                    <div className=" mx-1  hover:h-4 border-violet-400 border hover:w-4  rounded-full flex justify-center items-center hover:border-violet-400 duration-100 ease-in-out ">
-                      <div className=" bg-violet-400  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
+                  <div className="absolute flex justify-center border top-28 group-hover:block hidden group-hover:bg-white">
+                    <div className="flex w-full py-2 px-3">
+                      <img src={Basket} width={30} alt="123" />
+                      <img src={DoubleArrow} className="rotate-90 mx-4" width={30} alt="123" />
+                      <img src={Eyes} width={30} alt="123" />
+                      <img src={Heart} className="ms-4" width={35} alt="123" />
                     </div>
                   </div>
-
-                  <div className="flex">
-                    <img src={StarBg} width={12} alt="123" />
-                    <img src={StarBg} width={12} alt="123" />
-                    <img src={StarBg} width={12} alt="123" />
-                    <img src={StarBg} width={12} alt="123" />
-                    <img src={StarBorder} width={12} alt="123" />
-                  </div>
-
-
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <PopularProduct/>
 
         <section className="bg-slate-100 flex justify-between mx-auto p-10 mt-10">
-          <div className="relative ">
+          <div className="relative">
             <img src={TimeImage} alt="" />
             <div className="absolute top-20 right-36 animate-pulse  bg-ninico w-20 h-20 p-3  rounded-full text-center text-white  ">
               <div className="">From</div>
@@ -238,13 +261,13 @@ const HomePage = () => {
             <div className="mt-3 text-slate-400 text-lg  ">
               Elegant pink origami design three-dimensional view and decoration co-exist. Great for adding a  decorative touchto any room's decor. Wonderful accenet piece for coffee tables or side table or side tables.
             </div>
-            <div className="my-10 flex">
-              <div className="border-b rounded-full border-4  border-ninico  w-4/5 "></div>
-              {/* <div className="border-b rounded-full border-4   "></div> */}
+            <div className="my-10 flex relative">
+              <div className="border-b rounded-full border-4  border-white w-full  "></div>
+              <div className="border-b rounded-full border-4  w-9/12  absolute top-0 border-red-500 "></div>
             </div>
 
             <div className="flex mt-5 justify-between items-center ">
-              <div className="flex  ">
+              <div className="flex">
                 <div className="py-3 px-4  bg-white text-3xl font-bold text-center">
                   <div className="">-66</div>
                   <div className=" text-base font-normal">Days</div>
@@ -270,9 +293,10 @@ const HomePage = () => {
 
         </section>
 
-        <div className="mb-96"></div>
-        
+
       </div>
+
+      <Footer />
 
     </>
   )

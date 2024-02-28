@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
 
+    container:{
+      padding:{
+        default : '1rem',
+        sm:'0',
+        lg : '4rem',
+        md : '10px',
+      }
+    },
+
     screens:{
       'xs': '320px',
       'sm': '640px',
@@ -28,6 +37,11 @@ export default {
         'ninico-two' : '#D61E4C',
         'topBar' : '#F3EEE7',
         'search' : '#F3F4F7',
+        'footer' : '#F8F8F8',
+        'footer-2' : '#EDEDED',
+        'footer-3' : '#777777',
+        // Shop Page Color
+        'shop-border' : '#CED4DA',
         // 'white' : "FFFEFC",
       },
 

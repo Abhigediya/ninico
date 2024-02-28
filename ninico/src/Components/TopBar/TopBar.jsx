@@ -1,5 +1,5 @@
 import React from 'react'
-import ArrowRight from '../../assets/ArrowRight.svg'
+import ArrowRightColor from '../../assets/ArrowRightColor.svg'
 
 const TopBar = () => {
   return (
@@ -9,7 +9,7 @@ const TopBar = () => {
           Welcome to our international shop! Enjoy free shipping on orders $100 up.
           <span className=' flex ms-2 text-ninico border-0 border-b-2  ' >
             <span>Shop Now</span>
-            <img className='ms-3' src={ArrowRight} alt="" width={20} />
+            <img className='ms-3' src={ArrowRightColor} alt="" width={20} />
           </span>
         </div>
       </div>
