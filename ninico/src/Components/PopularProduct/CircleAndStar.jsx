@@ -5,7 +5,7 @@ import StarBg from '../../assets/StarBG.svg'
 const CircleAndStar = () => {
     return (
         <>
-            <div className="flex">
+            <div className="flex ">
 
                 <div className="  hidden group-hover:block hover:h-4 border-cyan-300 border hover:w-4  rounded-full flex justify-center items-center hover:border-cyan-300 duration-100 ease-in-out ">
                     <div className=" bg-cyan-300  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>

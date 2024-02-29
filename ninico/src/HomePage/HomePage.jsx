@@ -1,69 +1,187 @@
-import TopBar from "../Components/TopBar/TopBar"
-import Navbar from "../Components/Navbar/Navbar"
-import Footer from "../Components/Footer/Footer"
-import PopularProduct from "../Components/PopularProduct/PopularProduct"
+import TopBar from "../Components/TopBar/TopBar";
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import PopularProduct from "../Components/PopularProduct/PopularProduct";
 
 // import all  images
-import SliderImgOne from '../assets/SliderImgONe.jpeg'
-import HandmadeImg from '../assets/HandmadeImg.jpeg'
-import PopularImg from '../assets/PopularImg.jpeg'
-import Table from '../assets/Table.svg'
-import FloorDriftwood from '../assets/FloorDriftwood.svg'
-import ChristmanTree from '../assets/ChristmanTree.svg'
-import BluetoothSpeaker from '../assets/BluetoothSpeaker.svg'
-import Receivers from '../assets/Receivers.svg'
-import Appetizer from '../assets/Appetizer.svg'
+import Arrow from "../assets/Arrow.svg";
+import SliderImgOne from "../assets/SliderImgONe.jpeg";
+import SliderImgTwo from "../assets/SliderImgTwo.jpeg";
+import SliderImgThree from "../assets/SliderImgThree.jpeg";
+import HandmadeImg from "../assets/HandmadeImg.jpeg";
+import PopularImg from "../assets/PopularImg.jpeg";
+import Table from "../assets/Table.svg";
+import FloorDriftwood from "../assets/FloorDriftwood.svg";
+import ChristmanTree from "../assets/ChristmanTree.svg";
+import BluetoothSpeaker from "../assets/BluetoothSpeaker.svg";
+import Receivers from "../assets/Receivers.svg";
+import Appetizer from "../assets/Appetizer.svg";
 
 // import product image
-import Basket from '../assets/Basket.svg'
-import DoubleArrow from '../assets/DoubleArrow.svg'
-import Eyes from '../assets/Eyes.svg'
-import Heart from '../assets/Heart.svg'
-import StarBorder from '../assets/StarBorder.svg'
-import StarBg from '../assets/StarBG.svg'
-import TimeImage from '../assets/TimeImage.png'
-import BradleyBurgressOne from '../assets/BradleyBurgessOne.jpeg'
-import BradleyBurgressTwo from '../assets/BradleyBurgessTwo.jpeg'
-import AllieSharpOne from '../assets/AllieSharpOne.jpeg'
-import AllieSharpTwo from '../assets/AllieSharpTwo.jpeg'
+import Basket from "../assets/Basket.svg";
+import DoubleArrow from "../assets/DoubleArrow.svg";
+import Eyes from "../assets/Eyes.svg";
+import Heart from "../assets/Heart.svg";
+import StarBorder from "../assets/StarBorder.svg";
+import StarBg from "../assets/StarBG.svg";
+import TimeImage from "../assets/TimeImage.png";
+import BradleyBurgressOne from "../assets/BradleyBurgessOne.jpeg";
+import BradleyBurgressTwo from "../assets/BradleyBurgessTwo.jpeg";
+import AllieSharpOne from "../assets/AllieSharpOne.jpeg";
+import AllieSharpTwo from "../assets/AllieSharpTwo.jpeg";
 
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const HomePage = () => {
   return (
     <>
+      {/* <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide className='bg-red-300 h-40'>
+          <img src={SliderImgOne} alt="" />
+          <div className="absolute top-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, consequatur?</div>
+        </SwiperSlide>
+        <SwiperSlide className='bg-red-400 h-40'>Slide 2</SwiperSlide>
+        <SwiperSlide className='bg-yellow-400 h-40 '>Slide 3</SwiperSlide>
+        <SwiperSlide className='bg-cyan-500 h-40 '>Slide 4</SwiperSlide>
+        <SwiperSlide className='bg-slate-400 h-40 '>Slide 5</SwiperSlide>
+        </Swiper> */}
+
       <TopBar />
       <div className="container mx-auto  ">
         <Navbar />
-        <div className=" md:flex sm:block mx-auto -mt-2">
-          <div className="">
+        <div className=" md:flex sm:block mx-auto -mt-1">
+          {/* <div className="">
             <img src={SliderImgOne} alt="" />
-          </div>
+          </div> */}
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper w-[1300px]  "
+          >
+            <SwiperSlide className="bg-red-300 h-40   ">
+              <img
+                src={SliderImgOne}
+                width={1200}
+                className=""
+                alt=""
+              />
+              <div className="absolute top-24 left-10   ">
+                <div className="text-ninico text-2xl">Accessories</div>
+                  <h1 className="text-5xl font-bold ">
+                  Up to <span className="text-ninico">40% Off </span> latest
+                 <br /> Creations{" "}
+                </h1>
+                <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
+                  <div className="text-sm font-semibold">Shop Now</div>
+                  <img src={Arrow} className='ms-4' width={10} alt="" />
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="bg-red-400 h-40">
+              <img
+                src={SliderImgTwo}
+                width={1200}
+                className=""
+                alt=""
+              />
+              <div className="absolute top-24 left-10   ">
+                <div className="text-ninico text-2xl">Accessories</div>
+                <h1 className="text-6xl font-bold ">
+                  Up to <span className="text-ninico">35% Off </span> latest
+                  Creations{" "}
+                </h1>
+                <button className="bg-white flex items-center mt-5 px-8 py-3">
+                  <div className="text-sm font-semibold">Shop Now</div>
+                  <img src={Arrow} className='ms-4' width={10} alt="" />
+                </button>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="bg-yellow-400 h-40 ">
+              <img
+                src={SliderImgThree}
+                width={1200}
+                className=""
+                alt=""
+              />
+              <div className="absolute top-24 left-10   ">
+                <div className="text-ninico text-2xl">Accessories</div>
+                  <h1 className="text-5xl font-bold ">
+                  Up to <span className="text-ninico">45% Off </span> latest
+                 <br /> Creations{" "}
+                </h1>
+                <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
+                  <div className="text-sm font-semibold">Shop Now</div>
+                  <img src={Arrow} className='ms-4' width={10} alt="" />
+                </button>
+              </div>
+            </SwiperSlide>
+          </Swiper>
 
-          <div className="ms-10 md:block md:justify-between">
-            <div className="relative" >
+          <div className="ms-3 -mt-2 md:block md:justify-between">
+            <div className="relative">
               <div className="overflow-hidden rounded-lg">
                 <div className="hover:scale-105 duration-75 ease-in         ">
-                  <img src={HandmadeImg} className=" md:w-[350px] sm:w-full mt-2 ms-0 p-0 " alt="" />
+                  <img
+                    src={HandmadeImg}
+                    className=" md:w-[350px] md:h-[210px] sm:w-full mt-2 ms-0 p-0 "
+                    alt=""
+                  />
                 </div>
               </div>
 
-              <div className="absolute top-[15px] left-[10px]  "  >
-                <span className="text-ninico " >Hand made</span>
-                <h2 className="font-medium text-xl pe-14" >New Mordern Stylist Craft </h2>
+              <div className="absolute top-[15px] left-[15px]  ">
+                <span className="text-ninico ">Hand made</span>
+                <h2 className="font-semibold text-xl pe-14">
+                  New Mordern Stylist Craft
+                </h2>
               </div>
             </div>
 
             <div className="mt-2">
-              <div className="relative"  >
+              <div className="relative">
                 <div className="overflow-hidden  rounded-md">
                   <div className="hover:scale-105 duration-75 ease-in   ">
-                    <img src={PopularImg} alt="123" className="md:w-[350px] sm:w-full  ms-0 p-0" />
+                    <img
+                      src={PopularImg}
+                      alt="123"
+                      className="md:w-[350px] md:h-[210px] sm:w-full  ms-0 p-0"
+                    />
                   </div>
                 </div>
-                <div className="absolute top-[10px] left-[10px]" >
+                <div className="absolute top-[10px] left-[15px]">
                   <span className="text-ninico">Popular</span>
-                  <h2 className="font-medium text-xl pe-14 " >Energy with our newest collection</h2>
+                  <h2 className="font-semibold text-xl pe-14 ">
+                    Energy with our newest collection
+                  </h2>
                 </div>
               </div>
             </div>
@@ -80,32 +198,28 @@ const HomePage = () => {
         <section className="mt-10">
           <div className="">
             <span className="text-2xl font-bold ">Top</span>
-            <span className="ms-3 text-ninico text-xl border-b-4 border-ninico " >Categories</span>
+            <span className="ms-3 text-ninico text-xl border-b-4 border-ninico ">
+              Categories
+            </span>
           </div>
 
           <div className="mt-10 flex justify-between flex-wrap lg:flex-wrap md:flex-wrap  ">
-
-            <div className="">
-
-              <div className=" w-36 group">
-                <div className="ctg-img">
-                  <img src={Table} alt="123" />
-                  <div className=" ctg-num   ">20</div>
-                </div>
-                <div className="ctg-txt">Driftwood Table Decor </div>
+            <div className=" w-36 group">
+              <div className="ctg-img">
+                <img src={Table} alt="123" />
+                <div className=" ctg-num   ">20</div>
               </div>
+              <div className="ctg-txt">Driftwood Table Decor </div>
             </div>
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className=" ">
-              <div className="w-36 group ">
-                <div className="ctg-img">
-                  <img src={FloorDriftwood} alt="123" />
-                  <div className="  ctg-num  ">12</div>
-                </div>
-                <div className="ctg-txt">Floor Driftwood Sculputer</div>
+            <div className="w-36 group ">
+              <div className="ctg-img">
+                <img src={FloorDriftwood} alt="123" />
+                <div className="  ctg-num  ">12</div>
               </div>
+              <div className="ctg-txt">Floor Driftwood Sculputer</div>
             </div>
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
@@ -120,44 +234,34 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className=" ">
-              <div className="w-36 group">
-                <div className="ctg-img">
-                  <img src={BluetoothSpeaker} alt="123" />
-                  <div className=" ctg-num   ">09</div>
-                </div>
-                <div className=" ctg-txt ">Wooden Bluetooth Speaker </div>
+            <div className="w-36 group">
+              <div className="ctg-img">
+                <img src={BluetoothSpeaker} alt="123" />
+                <div className=" ctg-num   ">09</div>
               </div>
+              <div className=" ctg-txt ">Wooden Bluetooth Speaker </div>
             </div>
 
             <div className="border-s  border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className=" ">
-              <div className="w-36 group">
-                <div className="bg-slate-100 relative p-10  rounded-full w-32  mx-auto">
-                  <img src={Receivers} alt="123" />
-                  <div className="  ctg-num  ">10</div>
-
-                </div>
-                <div className=" ctg-txt">Reciivers Amplifiers</div>
+            <div className="w-36 group  ">
+              <div className="bg-slate-100 relative p-10  rounded-full w-32  mx-auto">
+                <img src={Receivers} alt="123" />
+                <div className="  ctg-num  ">10</div>
               </div>
+              <div className=" ctg-txt">Reciivers Amplifiers</div>
             </div>
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="">
-              <div className="w-36 group">
-                <div className="ctg-img">
-                  <img src={Appetizer} alt="123" />
-                  <div className="  ctg-num  ">05</div>
-
-                </div>
-                <div className=" ctg-txt">Appetizer Plate Set</div>
+            <div className="w-36 group md:mt-10 lg:mt-0 ">
+              <div className="ctg-img">
+                <img src={Appetizer} alt="123" />
+                <div className="  ctg-num  ">05</div>
               </div>
+              <div className=" ctg-txt">Appetizer Plate Set</div>
             </div>
-
           </div>
-
         </section>
 
         <div className=" mt-12 border-b border-slate-200"></div>
@@ -245,7 +349,7 @@ const HomePage = () => {
             </div>
           </div>
         </section> */}
-        <PopularProduct/>
+        <PopularProduct />
 
         <section className="bg-slate-100 flex justify-between mx-auto p-10 mt-10">
           <div className="relative">
@@ -256,10 +360,15 @@ const HomePage = () => {
             </div>
           </div>
           <div className=" w-6/12 p-1">
-            <span className="text-ninico text-xl font-medium">$49.00 <del className="text-slate-400 ">$59.00</del> </span>
+            <span className="text-ninico text-xl font-medium">
+              $49.00 <del className="text-slate-400 ">$59.00</del>{" "}
+            </span>
             <h1 className="font-bold text-5xl">Pro2 Abstract Folded Pots</h1>
             <div className="mt-3 text-slate-400 text-lg  ">
-              Elegant pink origami design three-dimensional view and decoration co-exist. Great for adding a  decorative touchto any room's decor. Wonderful accenet piece for coffee tables or side table or side tables.
+              Elegant pink origami design three-dimensional view and decoration
+              co-exist. Great for adding a decorative touchto any room's decor.
+              Wonderful accenet piece for coffee tables or side table or side
+              tables.
             </div>
             <div className="my-10 flex relative">
               <div className="border-b rounded-full border-4  border-white w-full  "></div>
@@ -290,16 +399,12 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
         </section>
-
-
       </div>
 
       <Footer />
-
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

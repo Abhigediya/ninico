@@ -4,13 +4,13 @@ import Ukflag from '../../assets/ukflag.png'
 import Cart from '../../assets/Cart.svg'
 import User from '../../assets/User.svg'
 import Heart from '../../assets/Heart.svg'
-import Dropdown from '../../assets/Dropdown.svg'
+import Dropdown from '../../assets/DropdownColor.svg'
 import Logo from '../../assets/Logo.png'
 import Bar from '../../assets/BarsColor.svg'
 import Call from '../../assets/CallColor.svg'
 import Location from '../../assets/LocationColor.svg'
 import Handmade from '../../assets/Handmade.svg'
-import ShoePrint from '../../assets/ShoePrints.png'
+import ShoePrint from '../../assets/ShoePrints.svg'
 import HappyIcon from '../../assets/HappyIcon.svg'
 import Futboll from '../../assets/Futboll.svg'
 import King from '../../assets/King.svg'
@@ -21,7 +21,7 @@ import UserColor from '../../assets/UserColor.svg'
 const Navbar = () => {
   return (
     <>
-      <nav className=' mt-3 justify-between  items-center md:flex md:justify-between sm:flex sm:justify-between  sm:mx-auto  '>
+      <nav className=' mt-7 justify-between  items-center md:flex md:justify-between sm:flex sm:justify-between  sm:mx-auto  '>
 
         <div className="flex" >
           <div className="mx-4 mt-1 xl:hidden "><img src={Bar} width={30} alt="123" /></div>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         <div className=" px-4 rounded-lg h-12 bg-search hidden md:flex   " >
-          <img src={Search} className="" alt="123  " width={25} />
+          <img src={Search} className="bg-search" alt="123  " width={25} />
           <input type="text" className=' lg:w-96 md:w-72 focus:outline-none   h-12 ps-4 text-lg  ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
         </div>
 
@@ -38,12 +38,12 @@ const Navbar = () => {
             <div className="">
               <span className='flex  align-center p-1 border border-slate-300 rounded-md '>
                 <img className=' ' src={Ukflag} alt="" width={40} />
-                <span className='mx-1 mt-2 '>English</span>
-                <img src={Dropdown} className="dropdown-toggle" alt="" width={30} />
+                <span className='mx-1 mt-2  '>English</span>
+                <img src={Dropdown} className="dropdown-toggle" alt="" width={20} />
               </span>
 
-              <div className="dropdown-cnt">
-                <ul className='ms-3 mt-1 w-[125px]  text-left  '>
+              <div className="dropdown-cnt z-[10] p-0 mt-5 ">
+                <ul className='ms-3 mt-1 w-[115px]  text-left  '>
                   <li className='mt-2' >Arabic</li>
                   <li className='mt-2'>Spanish</li>
                   <li className='my-2'>Mandarin</li>
@@ -83,8 +83,8 @@ const Navbar = () => {
 
       </nav>
 
-      <nav className='  mt-3 flex justify-between'>
-        <div className="flex items-center ">
+      <nav className='  mt-3 flex justify-between '>
+        <div className="flex  items-center mt-0 ">
 
           <div className="p-3 px-5 dropdown flex rounded-tl-md rounded-tr-md bg-ninico xl:flex  hidden   ">
             <div className="flex  ">
@@ -93,63 +93,54 @@ const Navbar = () => {
               </div>
               <div className="text-white ms-3 font-medium ">Categories</div>
             </div>
-            <div className="dropdown-cnt   ">
+            <div className="dropdown-cnt rounded-none border-none z-[10]   ">
               <ul className=''>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex'>
                     <img src={UserColor} width={20} alt="" />
                     <div className="ms-3 text-sm">Candles</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={Handmade} width={20} alt="" />
                     <div className="ms-3 text-sm   "> Handmade</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={ShoePrint} className="rotate-90" width={20} alt="" />
                     <div className="ms-3 text-sm  ">Gift Sets</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={HappyIcon} width={18} alt="" />
                     <div className="ms-3 text-sm  ">Plastic Gift</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={Futboll} width={18} alt="" />
                     <div className="ms-3 text-sm  "> Handly Cream</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={King} width={18} alt="" />
                     <div className="ms-3 text-sm  "> Handly Cream</div>
-                  </div>
                 </li>
-                <li className=''>
-                  <div className="flex">
+                <li className='flex mt-5'>
                     <img src={Futboll} width={18} alt="" />
                     <div className="ms-3 text-sm  ">Silk Accessories</div>
-                  </div>
                 </li>
+              </ul>
+              <ul className='mt-6'>
+                <li className='mt-1 hover:underline hover:underline-offset-2' >Value of the Day</li>
+                <li className='mt-1 hover:underline hover:underline-offset-2' >Top 100 Offers</li>
+                <li className='mt-1 hover:underline hover:underline-offset-2' >New Arrivals</li>
               </ul>
             </div>
           </div>
 
 
-          <ul className=" respo-nav flex xl:flex lg:hidden md:hidden ">
-            <li className="ms-2 dropdown ">
-              <div className="flex p-3 ">
+          <div className=" respo-nav flex xl:flex lg:hidden md:hidden mt-3 ">
+            <div className="ms-2 dropdown  ">
+              <div className="flex p-3 text-sm ">
                 <div className="">
-                  <span className='font-medium' >Home</span>
+                  <span className='font-semibold' >Home</span>
                   <span className='border 2xl 2xl:hidden xl:hidden '>+</span>
                 </div>
-                <img src={Dropdown} width={30} alt="123" />
+                <img src={Dropdown} width={20} alt="123" />
               </div>
               <div className="dropdown-cnt  ">
                 <ul className='w-52'>
@@ -160,12 +151,12 @@ const Navbar = () => {
                   <li className='li-move'>Food Grocery</li>
                 </ul>
               </div>
-            </li>
+            </div>
 
-            <li className=" dropdown">
-              <div className="flex p-3">
-                <span className='font-medium'>Shop</span>
-                <img src={Dropdown} width={30} alt="123" />
+            <div className=" dropdown ">
+              <div className="flex py-3 px-2 text-sm">
+                <span className='font-semibold'>Shop</span>
+                <img src={Dropdown} width={20} alt="123" />
               </div>
               <div className="dropdown-cnt ">
                 <ul className='w-52'>
@@ -182,12 +173,12 @@ const Navbar = () => {
                   <li className='li-move' ></li>
                 </ul>
               </div>
-            </li>
+            </div>
 
-            <li className=" dropdown">
-              <div className="flex p-3">
-                <span className='font-medium' >Pages</span>
-                <img src={Dropdown} width={30} alt="123" />
+            <div className=" dropdown  ">
+              <div className="flex py-3 px-2">
+                <span className='font-semibold text-sm ' >Pages</span>
+                <img src={Dropdown} width={20} alt="123" />
               </div>
               <div className="dropdown-cnt  ">
                 <div className="flex ">
@@ -217,12 +208,12 @@ const Navbar = () => {
                   </ul>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li className=" dropdown">
-              <div className="flex p-3 ">
-                <span className='font-medium'>Blog</span>
-                <img src={Dropdown} width={30} alt="123" />
+            <div className=" dropdown ">
+              <div className="flex py-3 px-2 ">
+                <span className='font-semibold text-sm '>Blog</span>
+                <img src={Dropdown} width={20} alt="123" />
               </div>
               <div className="dropdown-cnt ">
                 <ul className='w-32'>
@@ -230,22 +221,22 @@ const Navbar = () => {
                   <li className='li-move' >Blog Details</li>
                 </ul>
               </div>
-            </li>
+            </div>
 
-            <li className="  ">
+            <div className="  ">
               <div className="p-3 font-medium">Contact</div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
         <div className="  items-center justify-around xl:flex hidden">
           <div className="flex items-center">
             <img src={Call} width={30} alt="" />
-            <span className='font-bold  ms-1  '>908. 408. 504. 39</span>
+            <span className='font-semibold  ms-1  '>908. 408. 504. 39</span>
           </div>
           <div className=" ms-3 flex">
             <img src={Location} width={20} alt="" />
-            <span className='font-bold ms-1'>Find Store</span>
+            <span className='font-semibold ms-1'>Find Store</span>
           </div>
         </div>
       </nav>

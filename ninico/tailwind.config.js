@@ -33,6 +33,7 @@ export default {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
+         
         'ninico' : '#d51243',
         'ninico-two' : '#D61E4C',
         'topBar' : '#F3EEE7',
@@ -40,8 +41,10 @@ export default {
         'footer' : '#F8F8F8',
         'footer-2' : '#EDEDED',
         'footer-3' : '#777777',
+        'bdr-color' : '#E7E7E7',
         // Shop Page Color
         'shop-border' : '#CED4DA',
+        
         // 'white' : "FFFEFC",
       },
 

@@ -28,29 +28,15 @@ import TerryByrdTwo from '../../assets/TerryByrdTwo.jpeg'
 
 
 
-const PopularProduct = () => {
+const PopularProductTwo = () => {
     return (
         <>
-            <section className="mt-14">
-                <div className="flex justify-between ">
-                    <div className="">
-                        <span className="text-2xl font-bold">Popular</span>
-                        <span className="ms-3 text-ninico text-xl font-medium">Products</span>
-                    </div>
-                    <ul className="flex  font-medium">
-                        <li className="mx-4" > <button className="text-ninico font-bold border-b border-ninico ">All</button>  </li>
-                        <li className="mx-4">Popular</li>
-                        <li className="mx-4">On Sale</li>
-                        <li className="mx-4">Best Rated</li>
-                        <li></li>
-                    </ul>
-                </div>
-
+            <section className="mt-14  ">
                 <div className="">
     
-                    <div className="mt-10 grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-5  ">
+                    <div className="mt-10 grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 gap-3  ">
                         {/* Bradley Burgress 2 -----> product 1 */}
-                        <div className="w-64 ">
+                        <div className="w-56 ">
                             <div className=" group  ">
                                 <div className="relative flex justify-center   ">
                                     <img src={BradleyBurgessOne} className=' ' width={250} alt="123" />
@@ -59,7 +45,7 @@ const PopularProduct = () => {
                                     <img src={BradleyBurgessTwo} width={250} alt="123" />
 
                                     <div className=" flex justify-center   ">
-                                        <div className="   absolute  flex justify-center top-32     group-hover:block hidden group-hover:bg-white   ">
+                                        <div className="   absolute  flex justify-center     group-hover:block hidden group-hover:bg-white   ">
                                             <div className="flex justify-around    py-2 px-3">
                                                 <img src={Basket} width={30} alt="" />
                                                 <img src={DoubleArrow} className="rotate-90 mx-3 " width={25} alt="" />
@@ -83,7 +69,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Allie Sharp -----> Product 2 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={AllieSharpOne} className=' ' width={250} alt="123" />
@@ -92,7 +78,7 @@ const PopularProduct = () => {
                                     <img src={AllieSharpTwo} width={250} alt="123" />
 
                                     <div className=" flex justify-center   ">
-                                        <div className="   absolute  flex justify-center top-32     group-hover:block hidden group-hover:bg-white   ">
+                                        <div className="   absolute  flex justify-center      group-hover:block hidden group-hover:bg-white   ">
                                             <div className="flex justify-around    py-2 px-3">
                                                 <img src={Basket} width={30} alt="" />
                                                 <img src={DoubleArrow} className="rotate-90 mx-3 " width={25} alt="" />
@@ -116,7 +102,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Nathaniel Baldwin -----> Product 3 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={NathanielBaldwinOne} className=' ' width={250} alt="123" />
@@ -149,7 +135,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Effie Rios -----> Product 4 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center     ">
                                     <img src={EffieRiosOne} className=' ' width={250} alt="123" />
@@ -182,7 +168,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Carolyn Goodwin -----> Product 5 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center  ">
                                     <img src={CarolynGoodwinOne} className=' ' width={250} alt="123" />
@@ -215,7 +201,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Evelyn Patton -----> Product 6 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={EvelynPattonOne} className=' ' width={250} alt="123" />
@@ -248,13 +234,13 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Sally Ray -----> Product 7 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative  flex justify-center   ">
-                                    <img src={SallyRayOne} className=' ' width={250} alt="123" />
+                                    <img src={SallyRayOne} className=' ' width={200} alt="123" />
 
                                     <div className=" group absolute top-0 left-0 hidden group-hover:block ">
-                                    <img src={SallyRayTwo} width={250} alt="123" />
+                                    <img src={SallyRayTwo} width={200} alt="123" />
 
                                     <div className=" flex justify-center   ">
                                         <div className="   absolute  flex justify-center top-32     group-hover:block hidden group-hover:bg-white   ">
@@ -281,7 +267,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Ora Bowman -----> Product 8 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={OraBowmanOne} className=' ' width={250} alt="123" />
@@ -314,7 +300,7 @@ const PopularProduct = () => {
                         </div>
                         
                         {/* Frederick Valdez  -----> Product 9 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={FrederickValdezOne} className=' ' width={250} alt="123" />
@@ -347,7 +333,7 @@ const PopularProduct = () => {
                         </div>
 
                         {/* Terry Byrd -----> Product 10 */}
-                        <div className="w-64">
+                        <div className="w-56">
                             <div className=" group group-hover:p-2  ">
                                 <div className=" relative flex justify-center    ">
                                     <img src={TerryByrdOne} className=' ' width={250} alt="123" />
@@ -389,4 +375,4 @@ const PopularProduct = () => {
     )
 }
 
-export default PopularProduct
+export default PopularProductTwo

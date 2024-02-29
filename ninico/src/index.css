@@ -5,6 +5,7 @@
 * {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
+  color: #040404;
 }
 
 /* @layer utilities {
@@ -29,7 +30,7 @@
     }
 
     .li-move{
-      @apply hover:text-ninico hover:ms-3 ease-in duration-500
+      @apply hover:text-ninico hover:ms-3 ease-linear   duration-300
     }
 
     
