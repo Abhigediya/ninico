@@ -1,4 +1,6 @@
 import '../Navbar/Navbar.css'
+import { useState } from 'react'
+
 import Search from '../../assets/Search.svg'
 import Ukflag from '../../assets/ukflag.png'
 import Cart from '../../assets/Cart.svg'
@@ -6,7 +8,7 @@ import User from '../../assets/User.svg'
 import Heart from '../../assets/Heart.svg'
 import Dropdown from '../../assets/DropdownColor.svg'
 import Logo from '../../assets/Logo.png'
-import Bar from '../../assets/BarsColor.svg'
+import Bar from '../../assets/Bars.svg'
 import Call from '../../assets/CallColor.svg'
 import Location from '../../assets/LocationColor.svg'
 import Handmade from '../../assets/Handmade.svg'
@@ -18,13 +20,17 @@ import Gift from '../../assets/Gift.svg'
 import UserColor from '../../assets/UserColor.svg'
 
 
+
 const Navbar = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <>
-      <nav className=' mt-7 justify-between  items-center md:flex md:justify-between sm:flex sm:justify-between  sm:mx-auto  '>
+      <nav className=' mt-7 justify-between  items-center md:flex md:justify-between sm:flex sm:justify-between    '>
 
         <div className="flex" >
-          <div className="mx-4 mt-1 xl:hidden "><img src={Bar} width={30} alt="123" /></div>
+          <div className="mx-4 mt-1 lg:hidden  " onClick={() => setOpen(!open) } ><img src={Bar} width={30} alt="123" /></div>
           <div className=""><img src={Logo} alt="" /></div>
         </div>
 
@@ -33,7 +39,7 @@ const Navbar = () => {
           <input type="text" className=' lg:w-96 md:w-72 focus:outline-none   h-12 ps-4 text-lg  ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
         </div>
 
-        <div className="flex xl:flex hidden   ">
+        <div className="flex lg:flex hidden   ">
           <button className='dropdown     '>
             <div className="">
               <span className='flex  align-center p-1 border border-slate-300 rounded-md '>
@@ -86,7 +92,7 @@ const Navbar = () => {
       <nav className='  mt-3 flex justify-between '>
         <div className="flex  items-center mt-0 ">
 
-          <div className="p-3 px-5 dropdown flex rounded-tl-md rounded-tr-md bg-ninico xl:flex  hidden   ">
+          <div className="p-3 px-5 dropdown flex rounded-tl-md rounded-tr-md bg-ninico lg:flex  hidden   ">
             <div className="flex  ">
               <div className=" ">
                 <img src={Bar} alt="" width={25} />
@@ -96,32 +102,32 @@ const Navbar = () => {
             <div className="dropdown-cnt rounded-none border-none z-[10]   ">
               <ul className=''>
                 <li className='flex'>
-                    <img src={UserColor} width={20} alt="" />
-                    <div className="ms-3 text-sm">Candles</div>
+                  <img src={UserColor} width={20} alt="" />
+                  <div className="ms-3 text-sm">Candles</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={Handmade} width={20} alt="" />
-                    <div className="ms-3 text-sm   "> Handmade</div>
+                  <img src={Handmade} width={20} alt="" />
+                  <div className="ms-3 text-sm   "> Handmade</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={ShoePrint} className="rotate-90" width={20} alt="" />
-                    <div className="ms-3 text-sm  ">Gift Sets</div>
+                  <img src={ShoePrint} className="rotate-90" width={20} alt="" />
+                  <div className="ms-3 text-sm  ">Gift Sets</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={HappyIcon} width={18} alt="" />
-                    <div className="ms-3 text-sm  ">Plastic Gift</div>
+                  <img src={HappyIcon} width={18} alt="" />
+                  <div className="ms-3 text-sm  ">Plastic Gift</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={Futboll} width={18} alt="" />
-                    <div className="ms-3 text-sm  "> Handly Cream</div>
+                  <img src={Futboll} width={18} alt="" />
+                  <div className="ms-3 text-sm  "> Handly Cream</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={King} width={18} alt="" />
-                    <div className="ms-3 text-sm  "> Handly Cream</div>
+                  <img src={King} width={18} alt="" />
+                  <div className="ms-3 text-sm  "> Handly Cream</div>
                 </li>
                 <li className='flex mt-5'>
-                    <img src={Futboll} width={18} alt="" />
-                    <div className="ms-3 text-sm  ">Silk Accessories</div>
+                  <img src={Futboll} width={18} alt="" />
+                  <div className="ms-3 text-sm  ">Silk Accessories</div>
                 </li>
               </ul>
               <ul className='mt-6'>
@@ -133,11 +139,11 @@ const Navbar = () => {
           </div>
 
 
-          <div className=" respo-nav flex xl:flex lg:hidden md:hidden mt-3 ">
+          <div className={` respo-nav hidden lg:flex sm:inline-block sm:z-10 sm:bg-black lg:bg-white   sm:text-slate-100 sm:w-28  lg:items-center sm:pb-0 pb-12 absolute lg:static lg:z-auto z-20  w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-700 ease-in   mt-3 ${open ? 'top-20 left-0 text-white  ' : '-left-full top-20 bg-green-400 '} `}>
             <div className="ms-2 dropdown  ">
               <div className="flex p-3 text-sm ">
                 <div className="">
-                  <span className='font-semibold' >Home</span>
+                  <span className='font-semibold lg:text-[#040404] md:text-white' >Home</span>
                   <span className='border 2xl 2xl:hidden xl:hidden '>+</span>
                 </div>
                 <img src={Dropdown} width={20} alt="123" />

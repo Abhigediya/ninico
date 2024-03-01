@@ -18,17 +18,25 @@ import Receivers from "../assets/Receivers.svg";
 import Appetizer from "../assets/Appetizer.svg";
 
 // import product image
-import Basket from "../assets/Basket.svg";
-import DoubleArrow from "../assets/DoubleArrow.svg";
-import Eyes from "../assets/Eyes.svg";
-import Heart from "../assets/Heart.svg";
-import StarBorder from "../assets/StarBorder.svg";
-import StarBg from "../assets/StarBG.svg";
+// import Basket from "../assets/Basket.svg";
+// import DoubleArrow from "../assets/DoubleArrow.svg";
+// import Eyes from "../assets/Eyes.svg";
+// import Heart from "../assets/Heart.svg";
+// import StarBorder from "../assets/StarBorder.svg";
+// import StarBg from "../assets/StarBG.svg";
 import TimeImage from "../assets/TimeImage.png";
-import BradleyBurgressOne from "../assets/BradleyBurgessOne.jpeg";
-import BradleyBurgressTwo from "../assets/BradleyBurgessTwo.jpeg";
-import AllieSharpOne from "../assets/AllieSharpOne.jpeg";
-import AllieSharpTwo from "../assets/AllieSharpTwo.jpeg";
+// import BradleyBurgressOne from "../assets/BradleyBurgessOne.jpeg";
+// import BradleyBurgressTwo from "../assets/BradleyBurgessTwo.jpeg";
+// import AllieSharpOne from "../assets/AllieSharpOne.jpeg";
+// import AllieSharpTwo from "../assets/AllieSharpTwo.jpeg";
+
+import Instagram from '../assets/Instagram.svg'
+import NinicoShopImgOne from '../assets/NinicoShopImgOne.jpeg'
+import NinicoShopImgTwo from '../assets/NinicoShopImgTwo.jpeg'
+import NinicoShopImgThree from '../assets/NinicoShopImgThree.jpeg'
+import NinicoShopImgFour from '../assets/NinicoShopImgFour.jpeg'
+import NinicoShopImgFive from '../assets/NinicoShopImgFive.jpeg'
+import NinicoShopImgSix from '../assets/NinicoShopImgSix.jpeg'
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -85,7 +93,7 @@ const HomePage = () => {
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper w-[1300px]  "
+            className="mySwiper w-[1200px]  "
           >
             <SwiperSlide className="bg-red-300 h-40   ">
               <img
@@ -96,9 +104,9 @@ const HomePage = () => {
               />
               <div className="absolute top-24 left-10   ">
                 <div className="text-ninico text-2xl">Accessories</div>
-                  <h1 className="text-5xl font-bold ">
+                <h1 className="text-5xl font-bold ">
                   Up to <span className="text-ninico">40% Off </span> latest
-                 <br /> Creations{" "}
+                  <br /> Creations{" "}
                 </h1>
                 <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
@@ -134,9 +142,9 @@ const HomePage = () => {
               />
               <div className="absolute top-24 left-10   ">
                 <div className="text-ninico text-2xl">Accessories</div>
-                  <h1 className="text-5xl font-bold ">
+                <h1 className="text-5xl font-bold ">
                   Up to <span className="text-ninico">45% Off </span> latest
-                 <br /> Creations{" "}
+                  <br /> Creations{" "}
                 </h1>
                 <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
@@ -196,11 +204,14 @@ const HomePage = () => {
         {/* ctgnum = 6 number it's class created */}
         {/* ctgtxt = 6 text it's class created */}
         <section className="mt-10">
-          <div className="">
-            <span className="text-2xl font-bold ">Top</span>
-            <span className="ms-3 text-ninico text-xl border-b-4 border-ninico ">
-              Categories
-            </span>
+          <div className="flex">
+            <div className="text-2xl font-bold ">Top</div>
+            <div className="relative">
+              <div className="ms-3  text-ninico text-xl  ">
+                Categories
+              </div>
+              <div className="h-3 ms-3 animate-pulse absolute top-4 z-[-1] w-24 bg-[#FFE6EC]"></div>
+            </div>
           </div>
 
           <div className="mt-10 flex justify-between flex-wrap lg:flex-wrap md:flex-wrap  ">
@@ -400,7 +411,46 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
+        <section className="my-28   ">
+
+          <div className="pb-10 text-center ">
+            <div className="text-xl text-ninico">Follow On</div >
+            <div className="flex justify-center">
+              <img src={Instagram} width={40} alt="" />
+              <div className="text-5xl font-semibold">ninico-shop</div>
+            </div>
+          </div>
+
+          <div className="">
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              // freeMode={true}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgOne} alt="" /></SwiperSlide>
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgTwo} alt="" /></SwiperSlide>
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgThree} alt="" /></SwiperSlide>
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgFour} alt="" /></SwiperSlide>
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgFive} alt="" /></SwiperSlide>
+              <SwiperSlide> <img className="rounded-md" src={NinicoShopImgSix} alt="" /></SwiperSlide>
+            </Swiper>
+
+          </div>
+        </section>
       </div>
+
 
       <Footer />
     </>
