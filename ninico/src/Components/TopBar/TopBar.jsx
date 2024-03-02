@@ -4,7 +4,7 @@ import ArrowNinico from '../../assets/ArrowNinico.svg'
 const TopBar = () => {
   return (
     <>
-      <div className="p-2 font-semibold bg-topBar"  >
+      <div className="py-2 font-semibold bg-topBar"  >
         <div className="container mx-auto flex sm:block md:flex welcome" >
           Welcome to our international shop! Enjoy free shipping on orders $100 up.
           <span className=' flex text-ninico  border-0 border-b-2  ' >

@@ -77,7 +77,7 @@ const HomePage = () => {
       <TopBar />
       <div className="container mx-auto  ">
         <Navbar />
-        <div className=" md:flex sm:block mx-auto -mt-1">
+        <section className=" lg:flex sm:block  -mt-1">
           {/* <div className="">
             <img src={SliderImgOne} alt="" />
           </div> */}
@@ -93,18 +93,18 @@ const HomePage = () => {
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper w-[1200px]  "
+            className="mySwiper xl:w-[1100px] lg:w-[1000px] md:w-[720px] sm:w-[650px] sm:h-[450px] xs:h-[220px] xs:w-[300px]   "
           >
             <SwiperSlide className="bg-red-300 h-40   ">
               <img
                 src={SliderImgOne}
                 width={1200}
-                className=""
+                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
                 alt=""
               />
-              <div className="absolute top-24 left-10   ">
-                <div className="text-ninico text-2xl">Accessories</div>
-                <h1 className="text-5xl font-bold ">
+              <div className="absolute sm:top-24 left-10 xs:top-10  ">
+                <div className="text-ninico text-2xl xs:text-md">Accessories</div>
+                <h1 className="sm:text-5xl font-bold xs:text-md  ">
                   Up to <span className="text-ninico">40% Off </span> latest
                   <br /> Creations{" "}
                 </h1>
@@ -118,16 +118,16 @@ const HomePage = () => {
               <img
                 src={SliderImgTwo}
                 width={1200}
-                className=""
+                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
                 alt=""
               />
-              <div className="absolute top-24 left-10   ">
-                <div className="text-ninico text-2xl">Accessories</div>
-                <h1 className="text-6xl font-bold ">
+              <div className="absolute sm:top-24 left-10 xs:top-10 ">
+                <div className="text-ninico text-2xl xs:text-md ">Accessories</div>
+                <h1 className="sm:text-6xl font-bold xs:text-md ">
                   Up to <span className="text-ninico">35% Off </span> latest
                   Creations{" "}
                 </h1>
-                <button className="bg-white flex items-center mt-5 px-8 py-3">
+                <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
                   <img src={Arrow} className='ms-4' width={10} alt="" />
                 </button>
@@ -137,14 +137,14 @@ const HomePage = () => {
               <img
                 src={SliderImgThree}
                 width={1200}
-                className=""
+                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
                 alt=""
               />
-              <div className="absolute top-24 left-10   ">
-                <div className="text-ninico text-2xl">Accessories</div>
-                <h1 className="text-5xl font-bold ">
+              <div className="absolute sm:top-24 left-10 xs:top-10   ">
+                <div className="text-ninico text-2xl xs:text-md">Accessories</div>
+                <h1 className="sm:text-5xl font-bold  xs:text-md ">
                   Up to <span className="text-ninico">45% Off </span> latest
-                  <br /> Creations{" "}
+                  <br /> Creations
                 </h1>
                 <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
@@ -154,19 +154,19 @@ const HomePage = () => {
             </SwiperSlide>
           </Swiper>
 
-          <div className="ms-3 -mt-2 md:block md:justify-between">
-            <div className="relative">
+          <div className="xl:ms-3 md:ms-0  -mt-2 md:flex lg:block md:justify-between">
+            <div className="relative xl:me-0 lg:ms-2 lg:me-0   md:me-2 ">
               <div className="overflow-hidden rounded-lg">
                 <div className="hover:scale-105 duration-75 ease-in         ">
                   <img
                     src={HandmadeImg}
-                    className=" md:w-[350px] md:h-[210px] sm:w-full mt-2 ms-0 p-0 "
+                    className=" md:h-[210px] sm:w-full mt-2 ms-0 p-0 "
                     alt=""
                   />
                 </div>
               </div>
 
-              <div className="absolute top-[15px] left-[15px]  ">
+              <div className="absolute lg:top-[15px] lg:left-[15px] md:left-[30px] md:top-[40px] xs:top-[20px] xs:left-[20px] ">
                 <span className="text-ninico ">Hand made</span>
                 <h2 className="font-semibold text-xl pe-14">
                   New Mordern Stylist Craft
@@ -174,18 +174,18 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="mt-2">
-              <div className="relative">
+            <div className="mt-2 ">
+              <div className="relative  lg:ms-2 md:ms-2 ">
                 <div className="overflow-hidden  rounded-md">
                   <div className="hover:scale-105 duration-75 ease-in   ">
                     <img
                       src={PopularImg}
                       alt="123"
-                      className="md:w-[350px] md:h-[210px] sm:w-full  ms-0 p-0"
+                      className=" md:h-[210px] sm:w-full  ms-0 p-0"
                     />
                   </div>
                 </div>
-                <div className="absolute top-[10px] left-[15px]">
+                <div className="absolute lg:top-[15px] lg:left-[15px] md:left-[30px] md:top-[30px] xs:top-[20px] xs:left-[20px] ">
                   <span className="text-ninico">Popular</span>
                   <h2 className="font-semibold text-xl pe-14 ">
                     Energy with our newest collection
@@ -194,9 +194,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="height"></div>
+        </section>
 
         {/* Top Categories  & product section */}
 
@@ -214,8 +212,8 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="mt-10 flex justify-between flex-wrap lg:flex-wrap md:flex-wrap  ">
-            <div className=" w-36 group">
+          <div className="mt-10 flex xl:justify-between md:justify-start flex-wrap lg:flex-wrap md:flex-wrap  ">
+            <div className=" w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:mt-3 ">
               <div className="ctg-img">
                 <img src={Table} alt="123" />
                 <div className=" ctg-num   ">20</div>
@@ -225,7 +223,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
               <div className="ctg-img">
                 <img src={FloorDriftwood} alt="123" />
                 <div className="  ctg-num  ">12</div>
@@ -235,7 +233,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5">
               <div className="ctg-img">
                 <img src={ChristmanTree} alt="123" />
                 <div className="  ctg-num   ">03</div>
@@ -245,7 +243,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5">
               <div className="ctg-img">
                 <img src={BluetoothSpeaker} alt="123" />
                 <div className=" ctg-num   ">09</div>
@@ -255,7 +253,7 @@ const HomePage = () => {
 
             <div className="border-s  border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group  ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5  ">
               <div className="bg-slate-100 relative p-10  rounded-full w-32  mx-auto">
                 <img src={Receivers} alt="123" />
                 <div className="  ctg-num  ">10</div>
@@ -265,7 +263,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group md:mt-10 lg:mt-0 ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
               <div className="ctg-img">
                 <img src={Appetizer} alt="123" />
                 <div className="  ctg-num  ">05</div>
@@ -362,7 +360,7 @@ const HomePage = () => {
         </section> */}
         <PopularProduct />
 
-        <section className="bg-slate-100 flex justify-between mx-auto p-10 mt-10">
+        {/* <section className="bg-slate-100 flex justify-between mx-auto p-10 mt-10">
           <div className="relative">
             <img src={TimeImage} alt="" />
             <div className="absolute top-20 right-36 animate-pulse  bg-ninico w-20 h-20 p-3  rounded-full text-center text-white  ">
@@ -410,7 +408,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="my-28   ">
 
@@ -418,19 +416,40 @@ const HomePage = () => {
             <div className="text-xl text-ninico">Follow On</div >
             <div className="flex justify-center">
               <img src={Instagram} width={40} alt="" />
-              <div className="text-5xl font-semibold">ninico-shop</div>
+              <div className="text-5xl font-semibold ms-4">ninico-shop</div>
             </div>
           </div>
 
           <div className="">
             <Swiper
-              slidesPerView={5}
+
               spaceBetween={30}
               // freeMode={true}
               autoplay={{
                 delay: 1000,
                 disableOnInteraction: false,
               }}
+
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024:{
+                  slidesPerView: 4,
+                  spaceBetween:20,
+                },
+
+                1280:{
+                  slidesPerView:5,
+                  spaceBetween:20,
+                }
+              }}
+
               pagination={{
                 clickable: true,
               }}

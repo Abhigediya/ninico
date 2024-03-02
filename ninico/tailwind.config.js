@@ -7,12 +7,17 @@ export default {
   theme: {
 
     container:{
+      center:true
+    },
+
+    container:{
       padding:{
         default : '10px',
-        sm:'0',
-        lg : '2px',
-        md : '10px',
-        xl : '5.1rem'
+        xs: '0px',
+        sm:'50px',
+        lg : '30px',
+        md : '30px',
+        xl : '5rem',
       }
     },
 

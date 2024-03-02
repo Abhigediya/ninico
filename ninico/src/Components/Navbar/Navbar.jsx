@@ -9,6 +9,7 @@ import Heart from '../../assets/Heart.svg'
 import Dropdown from '../../assets/DropdownColor.svg'
 import Logo from '../../assets/Logo.png'
 import Bar from '../../assets/Bars.svg'
+import BarColor from '../../assets/BarsColor.svg'
 import Call from '../../assets/CallColor.svg'
 import Location from '../../assets/LocationColor.svg'
 import Handmade from '../../assets/Handmade.svg'
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className=' mt-7 justify-between  items-center md:flex md:justify-between sm:flex sm:justify-between    '>
+      <nav className=' mt-7 justify-between  items-center  flex justify-between    '>
 
         <div className="flex" >
           <div className="mx-4 mt-1 lg:hidden  " onClick={() => setOpen(!open) } ><img src={Bar} width={30} alt="123" /></div>
@@ -95,7 +96,7 @@ const Navbar = () => {
           <div className="p-3 px-5 dropdown flex rounded-tl-md rounded-tr-md bg-ninico lg:flex  hidden   ">
             <div className="flex  ">
               <div className=" ">
-                <img src={Bar} alt="" width={25} />
+                <img src={BarColor} alt="" width={25} />
               </div>
               <div className="text-white ms-3 font-medium ">Categories</div>
             </div>
@@ -139,9 +140,10 @@ const Navbar = () => {
           </div>
 
 
-          <div className={` respo-nav hidden lg:flex sm:inline-block sm:z-10 sm:bg-black lg:bg-white   sm:text-slate-100 sm:w-28  lg:items-center sm:pb-0 pb-12 absolute lg:static lg:z-auto z-20  w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-700 ease-in   mt-3 ${open ? 'top-20 left-0 text-white  ' : '-left-full top-20 bg-green-400 '} `}>
+          <div className={`  hidden  lg:flex sm:inline-block sm:z-10 sm:bg-black lg:bg-white   sm:text-slate-100 sm:w-28  lg:items-center sm:pb-0 pb-12 absolute lg:static lg:z-auto z-20  w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-700 ease-in   mt-3 ${open ? 'top-20 left-0 text-white  ' : '-left-full top-20 bg-green-400 '} `}>
+            
             <div className="ms-2 dropdown  ">
-              <div className="flex p-3 text-sm ">
+              <div className="flex px-3 py-2 text-sm ">
                 <div className="">
                   <span className='font-semibold lg:text-[#040404] md:text-white' >Home</span>
                   <span className='border 2xl 2xl:hidden xl:hidden '>+</span>
@@ -160,7 +162,7 @@ const Navbar = () => {
             </div>
 
             <div className=" dropdown ">
-              <div className="flex py-3 px-2 text-sm">
+              <div className="flex py-2 px-2 text-sm">
                 <span className='font-semibold'>Shop</span>
                 <img src={Dropdown} width={20} alt="123" />
               </div>
@@ -182,7 +184,7 @@ const Navbar = () => {
             </div>
 
             <div className=" dropdown  ">
-              <div className="flex py-3 px-2">
+              <div className="flex py-2 px-2">
                 <span className='font-semibold text-sm ' >Pages</span>
                 <img src={Dropdown} width={20} alt="123" />
               </div>
@@ -217,7 +219,7 @@ const Navbar = () => {
             </div>
 
             <div className=" dropdown ">
-              <div className="flex py-3 px-2 ">
+              <div className="flex py-2 px-2 ">
                 <span className='font-semibold text-sm '>Blog</span>
                 <img src={Dropdown} width={20} alt="123" />
               </div>
