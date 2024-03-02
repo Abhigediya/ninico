@@ -213,7 +213,8 @@ const HomePage = () => {
           </div>
 
           <div className="mt-10 flex xl:justify-between md:justify-start flex-wrap lg:flex-wrap md:flex-wrap  ">
-            <div className=" w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:mt-3 ">
+            
+            <div className=" w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
               <div className="ctg-img">
                 <img src={Table} alt="123" />
                 <div className=" ctg-num   ">20</div>
@@ -360,7 +361,7 @@ const HomePage = () => {
         </section> */}
         <PopularProduct />
 
-        {/* <section className="bg-slate-100 flex justify-between mx-auto p-10 mt-10">
+        <section className="bg-slate-100 lg:flex  justify-between mx-auto p-10 mt-10">
           <div className="relative">
             <img src={TimeImage} alt="" />
             <div className="absolute top-20 right-36 animate-pulse  bg-ninico w-20 h-20 p-3  rounded-full text-center text-white  ">
@@ -368,7 +369,7 @@ const HomePage = () => {
               <div className="text-2xl font-bold  ">$49</div>
             </div>
           </div>
-          <div className=" w-6/12 p-1">
+          <div className=" lg:w-6/12 p-1">
             <span className="text-ninico text-xl font-medium">
               $49.00 <del className="text-slate-400 ">$59.00</del>{" "}
             </span>
@@ -384,8 +385,8 @@ const HomePage = () => {
               <div className="border-b rounded-full border-4  w-9/12  absolute top-0 border-red-500 "></div>
             </div>
 
-            <div className="flex mt-5 justify-between items-center ">
-              <div className="flex">
+            <div className="flex flex-wrap mt-5 justify-between items-center ">
+              <div className="flex flex-wrap">
                 <div className="py-3 px-4  bg-white text-3xl font-bold text-center">
                   <div className="">-66</div>
                   <div className=" text-base font-normal">Days</div>
@@ -403,12 +404,12 @@ const HomePage = () => {
                   <div className=" text-base font-normal">Days</div>
                 </div>
               </div>
-              <div className="w-32 text-slate-400">
+              <div className="w-32 text-slate-400 sm:mt-0 xs:mt-3">
                 Remains until the end of the offer
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="my-28   ">
 

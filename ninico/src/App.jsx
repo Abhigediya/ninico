@@ -3,7 +3,8 @@ import './App.css'
 import TestNavbar from './Components/Navbar/TextNavbar'
 
 // import Shop from './Components/Navbar/Shop/ShopOne'
-import Shop from './Components/Navbar/Shop/ShopTwo'
+import ShopTwo from './Components/Navbar/Shop/ShopTwo'
+import Shop from './Components/Navbar/Shop/ShopOne'
 import ShopDetailsOne from './Components/Navbar/Shop/ShopDetailsOne'
 import PopularProductTwo from './Components/PopularProduct/PopularProductTwo'
 import StickyNavbar from './Components/Navbar/StickyNavbar'
@@ -14,10 +15,10 @@ function App() {
     <>
       {/* <TestNavbar/> */}
       {/* <StickyNavbar/> */}
-      <HomePage/>
+      {/* <HomePage/> */}
       {/* <PopularProductTwo/> */}
       {/* <ShopDetailsOne/>  */}
-      {/* <Shop/> */}
+      <ShopTwo/>
     </>
   )
 }

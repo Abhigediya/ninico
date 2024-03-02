@@ -1,36 +1,43 @@
 import React from "react";
-import TopBar from "../../TopBar/TopBar";
+import TopBarTwo from "../../TopBar/TopBarTwo";
 import Navbar from "../Navbar";
 import ShopImage from "../../../assets/ShopImage.jpg";
 import PopularProductTwo from "../../PopularProduct/PopularProductTwo";
 
+import BarDots from '../../../assets/BarDots.svg'
+import Grid from '../../../assets/Grid.svg'
+
 const ShopTwo = () => {
   return (
     <>
-      <TopBar />
-      <section className=" container mx-auto">
+      <TopBarTwo />
+      <div className="container mx-auto">
         <Navbar />
-        <div className="relative -mt-3   ">
-          <img src={ShopImage} className="h-52" alt="123" />
-          <div className="container mx-auto px-24 absolute top-16">
-            <div className="flex">
-              <div className="">Home</div>
-              <div className="border-b mb-3 border-bdr-color w-10"></div>
-              <div className="">Shop</div>
+      </div>
+      <div className="-mt-1 ">
+        <div className="relative">
+          <img src={ShopImage} className="h-48" alt="" />
+          <div className="absolute top-10 left-28  ">
+            <div className="flex items-center text-lg  ">
+              <div className="me-3">Home</div>
+              <div className="border-b w-8 border-footer-3"></div>
+              <div className="ms-3 text-footer-3  ">Shop</div>
             </div>
-            <h2 className="text-5xl font-semibold mt-2 ">Shop</h2>
+            <div className="text-5xl mt-4 font-semibold">Shop</div>
           </div>
         </div>
-      </section>
+      </div>
+
+
       <section className="container mx-auto mt-10 ">
-        <div className=" flex justify-between">
+        <div className="  xl:flex justify-between">
           <div className="">
-            <div className="flex justify-between w-4/5 ">
+            <div className="md:flex justify-between  ">
               <div className="">
                 <span>10</span>
                 <span>Item On List</span>
               </div>
-              <div className="">
+              <div className="flex">
                 <select
                   className="border border-shop-border focus:border focus:border-4 p-2 focus:border-sky-300 rounded-md"
                   name=""
@@ -51,11 +58,16 @@ const ShopTwo = () => {
                   <option value="">20 per page</option>
                   <option value="">30 per page</option>
                 </select>
+
+                <div className="lg:flex">
+                  <img src={BarDots} width={60} alt="" />
+                  <img src={Grid} className="lg:ms-0 md:ms-4" width={30} alt="" />
+                </div>
               </div>
             </div>
               <PopularProductTwo />
           </div>
-          <div className="w-48">
+          <div className="w-48 xl:ms-3   xs:mt-10">
             <div className="font-semibold">Category</div>
             <div className="border border-bdr-color"></div>
             <ul className="">

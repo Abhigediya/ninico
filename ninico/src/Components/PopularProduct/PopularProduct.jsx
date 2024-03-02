@@ -48,7 +48,7 @@ const PopularProduct = () => {
 
                 <div className="">
 
-                    <div className="mt-10 grid  lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 xs:w-full gap-5  ">
+                    <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 xs:w-full gap-5  ">
                         {/* Bradley Burgress 2 -----> product 1 */}
                         <div className="w-64 ">
                             <div className=" group  ">
