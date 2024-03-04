@@ -30,7 +30,7 @@ const TopBarTwo = () => {
                         </div>
                         <div className="flex p-2 mx-5">
                             <img src={Flight} width={20} alt="" />
-                            <div className="">Track Your Order</div>
+                            <div className="ms-2"> Track Your Order</div>
                         </div>
                         <div className="flex">
                             <img src={Facebook} width={8} alt="" />

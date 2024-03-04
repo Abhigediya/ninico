@@ -48,9 +48,14 @@ export default {
         'footer-2' : '#EDEDED',
         'footer-3' : '#777777',
         'bdr-color' : '#E7E7E7',
+
         // Shop Page Color
         'shop-border' : '#CED4DA',
-        
+        'sign-in' : '#F6F6F6',
+        'register' : '#F3EEE7',
+        'checkout' : '#F5F5F5',
+        'checkoutBorder' : '#ECB1C0',
+        'checkoutText' : '#6f7172',
         // 'white' : "FFFEFC",
       },
 

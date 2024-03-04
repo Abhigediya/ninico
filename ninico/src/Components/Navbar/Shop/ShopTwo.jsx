@@ -67,7 +67,7 @@ const ShopTwo = () => {
             </div>
               <PopularProductTwo />
           </div>
-          <div className="w-48 xl:ms-3   xs:mt-10">
+          <div className="w-48 xl:ms-3 xl:mt-0   xs:mt-10">
             <div className="font-semibold">Category</div>
             <div className="border border-bdr-color"></div>
             <ul className="">
