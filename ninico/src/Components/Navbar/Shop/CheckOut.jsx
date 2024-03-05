@@ -1,6 +1,7 @@
 import React from 'react'
 import TopBarTwo from '../../TopBar/TopBarTwo'
 import Navbar from '../Navbar'
+import Footer from '../../Footer/Footer'
 
 import ShopImage from '../../../assets/ShopImage.jpg'
 import Folder from '../../../assets/Folder.svg'
@@ -59,7 +60,7 @@ const CheckOut = () => {
                         <option value="">Qatar</option>
                         <option value="">Dominican Republic</option>
                     </select>
-                    <div className="flex justify-between pt-7">
+                    <div className="md:flex justify-between pt-7">
                         <div className="">
                             <span className='text-checkoutText text-lg'>First Name </span>
                             <span className='text-red-500'>*</span>
@@ -93,8 +94,8 @@ const CheckOut = () => {
                         </div>
                     </div>
                     <div className="mt-7 border border border-bdr-color  ">
-                        <input type="text" className='ps-4 w-full h-10 focus:outline-red-600 ' 
-                        placeholder='Apartment, suite, unit etc. (optional)' />
+                        <input type="text" className='ps-4 w-full h-10 focus:outline-red-600 '
+                            placeholder='Apartment, suite, unit etc. (optional)' />
                     </div>
 
                     <div className="pt-7">
@@ -106,12 +107,99 @@ const CheckOut = () => {
                             <input type="text" className='ps-4 w-full h-10 focus:outline-red-600 ' placeholder='Town / City' />
                         </div>
                     </div>
+
+                    <div className="md:flex justify-between pt-7">
+                        <div className="">
+                            <span className='text-checkoutText text-lg'>State / County  </span>
+                            <span className='text-red-500'>*</span>
+                            <div className=" border border-bdr-color w-64 ">
+                                <input type="text " className='ps-4 w-full h-10 focus:outline-red-600  ' />
+                            </div>
+                        </div>
+                        <div className="">
+                            <span className='text-checkoutText text-lg'>Postcode / Zip </span>
+                            <span className='text-red-500'>*</span>
+                            <div className=" border border border-bdr-color w-64 ">
+                                <input type="text" className='ps-4 w-full h-10 focus:outline-red-600 ' placeholder='Postcode / Zip' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="md:flex justify-between pt-7">
+                        <div className="">
+                            <span className='text-checkoutText text-lg'>Email Address  </span>
+                            <span className='text-red-500'>*</span>
+                            <div className=" border border-bdr-color w-64 ">
+                                <input type="text " className='ps-4 w-full h-10 focus:outline-red-600  ' />
+                            </div>
+                        </div>
+                        <div className="">
+                            <span className='text-checkoutText text-lg'>Phone </span>
+                            <span className='text-red-500'>*</span>
+                            <div className=" border border border-bdr-color w-64 ">
+                                <input type="text" className='ps-4 w-full h-10 focus:outline-red-600 ' placeholder='Postcode / Zip' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="pt-7">
+                        <input type="checkbox" />
+                        <span className='ms-2 text-checkoutText'>Create an Account?</span>
+                    </div>
+                    <div className="flex items-center pt-7 border-b border-bdr-color">
+                        <span className='text-2xl text-checkoutText pe-5 pb-2'>Ship to a different address?  </span>
+                        <input type="checkbox" />
+                    </div>
+
+                    <div className="pt-7">
+                        <div className="text-checkoutText pb-2">Order Notes</div>
+                        <textarea name="" id="" className=' border border-bdr-color p-5 text-lg' cols="60" rows="3"
+                            placeholder='Notes about your rder, e.g. special notes for delivery.'></textarea>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="border-4 border-checkoutBorder p-10">
+                        <div className="text-3xl pb-3 border-b border-bdr-color">Your Order</div>
+                        <div className="grid grid-cols-2 text-sm  ">
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">Product </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">Total </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">Vestibulum suscipit × 1 </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">$165.00 </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">Vestibulum dictum magna × 1 </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">$50.00</div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">Cart Subtotal </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">$215.00 </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color"> Shipping</div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">
+                                <div className="flex items-center">
+                                    <input type="radio" />
+                                    <span className='ms-2 text-checkoutText'>Flat Rate: $7.00</span>
+                                </div>
+                                <div className="flex items-center">
+                                    <input type="radio" />
+                                    <span className='ms-2 text-checkoutText'>Free Shipping</span>
+                                </div>
+                            </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color"> Order Total </div>
+                            <div className="text-checkoutText py-4 border-b border-bdr-color">$215.00</div>
+                        </div>
+                        <div className=" py-5 pt-10 flex text-xl font-medium justify-between">
+                            <div className="">Direct Bank Transfer</div>
+                            <div className="">+</div>
+                        </div>
+                        <div className=" py-5 flex text-xl font-medium justify-between">
+                            <div className="">Cheque Payment</div>
+                            <div className="">+</div>
+                        </div>
+                        <div className=" py-5 flex text-xl font-medium justify-between">
+                            <div className="">PayPal</div>
+                            <div className="">+</div>
+                        </div>
+
+                        <div className="mt-3 bg-ninico py-3 text-white  text-center font-medium">Place Order</div>
+                    </div>
                 </div>
             </section>
 
-            <div className="mt-96">
-                sc
-            </div>
+            <Footer/>
         </>
     )
 }

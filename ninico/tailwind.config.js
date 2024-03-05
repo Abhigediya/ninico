@@ -56,6 +56,7 @@ export default {
         'checkout' : '#F5F5F5',
         'checkoutBorder' : '#ECB1C0',
         'checkoutText' : '#6f7172',
+        'about' : '#F4F4F4',
         // 'white' : "FFFEFC",
       },
 
