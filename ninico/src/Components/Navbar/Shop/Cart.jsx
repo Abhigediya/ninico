@@ -1,7 +1,6 @@
 import React from 'react'
 import TopBarTwo from '../../TopBar/TopBarTwo'
 import Navbar from '../Navbar'
-
 import ShopImage from '../../../assets/ShopImage.jpg'
 import Footer from '../../Footer/Footer'
 

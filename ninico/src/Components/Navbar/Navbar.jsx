@@ -20,7 +20,7 @@ import King from '../../assets/King.svg'
 import Gift from '../../assets/Gift.svg'
 import UserColor from '../../assets/UserColor.svg'
 
-
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -31,13 +31,17 @@ const Navbar = () => {
       <nav className=' mt-7 justify-between  items-center  flex justify-between    '>
 
         <div className="flex" >
-          <div className="mx-4 mt-1 lg:hidden  " onClick={() => setOpen(!open) } ><img src={Bar} width={30} alt="123" /></div>
-          <div className=""><img src={Logo} alt="" /></div>
+          <div className="mx-4 mt-1 lg:hidden  " onClick={() => setOpen(!open)} ><img src={Bar} width={30} alt="123" /></div>
+          <div className="">
+            <Link to="/">
+              <img src={Logo} alt="" />
+            </Link>
+          </div>
         </div>
 
         <div className=" px-4 rounded-lg h-12 bg-search hidden md:flex   " >
           <img src={Search} className="bg-search" alt="123  " width={25} />
-          <input type="text" className=' lg:w-96 md:w-72 focus:outline-none   h-12 ps-4 text-lg  ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
+          <input type="text" className=' lg:w-96 md:w-72 focus:outline-none   h-12 ps-4 text-lg bg-[#F3F4F7] ' placeholder='Search Product.... ' style={{ backgroundColor: '#F3F4F7' }} />
         </div>
 
         <div className="flex lg:flex hidden   ">
@@ -140,8 +144,10 @@ const Navbar = () => {
           </div>
 
 
-          <div className={`  hidden  lg:flex sm:inline-block sm:z-10 sm:bg-black lg:bg-white   sm:text-slate-100 sm:w-28  lg:items-center sm:pb-0 pb-12 absolute lg:static lg:z-auto z-20  w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-700 ease-in   mt-3 ${open ? 'top-20 left-0 text-white  ' : '-left-full top-20 bg-green-400 '} `}>
-            
+          <div className={`  hidden  lg:flex sm:inline-block sm:z-10 sm:bg-black lg:bg-white sm:text-slate-100 sm:w-28
+            lg:items-center sm:pb-0 pb-12 absolute lg:static lg:z-auto z-20  w-full lg:w-auto lg:pl-0 pl-9 transition-all 
+            duration-700 ease-in   mt-3 ${open ? 'top-20 left-0 text-white  ' : '-left-full top-20 bg-green-400 '} `}>
+
             <div className="ms-2 dropdown  ">
               <div className="flex px-3 py-2 text-sm ">
                 <div className="">
@@ -168,16 +174,16 @@ const Navbar = () => {
               </div>
               <div className="dropdown-cnt ">
                 <ul className='w-52'>
-                  <li className='li-move' > <a href="/">Shop</a> </li>
-                  <li className='li-move' >Shop 2</li>
-                  <li className='li-move' >Shop Details</li>
-                  <li className='li-move' >Shop Details 2</li>
-                  <li className='li-move' >Shop Location</li>
-                  <li className='li-move' >Cart</li>
-                  <li className='li-move' >Sign in </li>
-                  <li className='li-move' >Checkout</li>
-                  <li className='li-move' >Wishlist</li>
-                  <li className='li-move' >Product Track</li>
+                  <li className='li-move' > <Link to="/shop">Shop</Link> </li>
+                  <li className='li-move' > <Link to='/ShopTwo'>Shop 2</Link> </li>
+                  <li className='li-move' > <Link to='/Shopdetails' > Shop Details</Link></li>
+                  <li className='li-move' > <Link to='/ShopDetailstwo'>Shop Details 2 </Link> </li>
+                  <li className='li-move' > <Link to='/ShopLocation'>Shop Location</Link></li>
+                  <li className='li-move' > <Link to='/Cart'>Cart</Link></li>
+                  <li className='li-move' > <Link to='/SignIn'>Sign In</Link> </li>
+                  <li className='li-move' > <Link to='/CheckOut'> Checkout</Link></li>
+                  <li className='li-move' > <Link to='/Wishlist'> Wishlist</Link></li>
+                  <li className='li-move' > <Link to='/ProductTrack'>Product Track</Link></li>
                   <li className='li-move' ></li>
                 </ul>
               </div>
@@ -192,8 +198,8 @@ const Navbar = () => {
                 <div className="flex ">
                   <ul className='w-52'>
                     <h3 className='font-semibold'>PAGE LAYOUT </h3>
-                    <li className='li-move' >Shop Filters V1</li>
-                    <li className='li-move' >Shop Filters V2</li>
+                    <li className='li-move' ><Link to='/Shop'>Shop Filter V1</Link></li>
+                    <li className='li-move' ><Link to='/ShopTwo'>Shop Filter V2</Link></li>
                     <li className='li-move' >Shop SideBar</li>
                     <li className='li-move' >Shop Right Sidebar</li>
                     <li className='li-move' >Shop List View</li>
@@ -201,18 +207,18 @@ const Navbar = () => {
                   </ul>
                   <ul className='w-52'>
                     <h3 className='font-semibold'>  PAGE LAYOUT  </h3>
-                    <li className='li-move' >About</li>
-                    <li className='li-move' >Cart</li>
-                    <li className='li-move' >Checkout</li>
-                    <li className='li-move' >Sign In</li>
-                    <li className='li-move' >Log In</li>
+                    <li className='li-move' > <Link to='/About'>About</Link></li>
+                    <li className='li-move' > <Link to='/Cart' >Cart</Link></li>
+                    <li className='li-move' > <Link to='/Checkout'>Checkout</Link> </li>
+                    <li className='li-move' > <Link to='/SignIn'>Sign In</Link></li>
+                    <li className='li-move' > <Link to='/SignIn'>Log In</Link></li>
                   </ul>
                   <ul className='w-52'>
                     <h3 className='font-semibold'>PAGE LAYOUT</h3>
-                    <li className='li-move' >Product Track</li>
-                    <li className='li-move' >Wishlist</li>
-                    <li className='li-move' >404 / Error</li>
-                    <li className='li-move' >Coming Soon</li>
+                    <li className='li-move' > <Link to='/ProductTrack'>Product Track</Link></li>
+                    <li className='li-move' > <Link to='/Wishlist'> Wishlist</Link></li>
+                    <li className='li-move' > <Link to='/Error'>404 / Error</Link></li>
+                    <li className='li-move' > <Link to='/ComingSoon'>Coming Soon</Link></li>
                   </ul>
                 </div>
               </div>
@@ -225,7 +231,7 @@ const Navbar = () => {
               </div>
               <div className="dropdown-cnt ">
                 <ul className='w-32'>
-                  <li className='li-move' >Blog</li>
+                  <li className='li-move' ><Link to='/Blog'>Blog</Link></li>
                   <li className='li-move' >Blog Details</li>
                 </ul>
               </div>

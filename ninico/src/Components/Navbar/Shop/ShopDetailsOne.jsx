@@ -57,9 +57,9 @@ const ShopDetailsOne = () => {
             <div className="flex items-center text-lg  ">
               <div className="me-3">Home</div>
               <div className="border-b w-8 border-footer-3"></div>
-              <div className="ms-3 text-footer-3  ">Shop</div>
+              <div className="ms-3 text-footer-3  ">Shop Details</div>  
             </div>
-            <div className="text-5xl mt-4 font-semibold">Shop</div>
+            <div className="text-5xl mt-4 font-semibold">Shop Details</div>
           </div>
         </div>
       </div>
