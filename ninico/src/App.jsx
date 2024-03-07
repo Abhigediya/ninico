@@ -17,6 +17,7 @@ import About from './Components/Navbar/Pages/About'
 import Error from './Components/Navbar/Pages/Error'
 import ComingSoon from './Components/Navbar/Pages/ComingSoon'
 import Blog from './Components/Navbar/Blog/Blog'
+import BlogDetails from './Components/Navbar/Blog/BlogDetails'
 
 import PopularProductTwo from './Components/PopularProduct/PopularProductTwo'
 import StickyNavbar from './Components/Navbar/StickyNavbar'
@@ -54,9 +55,9 @@ function App() {
           <Route path='/Error' element={<Error/>} ></Route>
           <Route path='/ComingSoon' element={<ComingSoon/>} ></Route>
           <Route path='/Blog' element={<Blog/>} ></Route>
+          <Route path='/BlogDetails' element={<BlogDetails/>} ></Route>
 
           
-          {/* <Route path='/' element={} ></Route> */}
           {/* <Route path='/' element={} ></Route> */}
         </Routes>
       </BrowserRouter>

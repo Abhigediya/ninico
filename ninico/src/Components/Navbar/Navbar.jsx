@@ -104,8 +104,8 @@ const Navbar = () => {
               </div>
               <div className="text-white ms-3 font-medium ">Categories</div>
             </div>
-            <div className="dropdown-cnt rounded-none border-none z-[10]   ">
-              <ul className=''>
+            <div className="dropdown-cnt mt-5 py-0 pt-3 px-0 w-[160px] rounded-none border-none z-[10]   ">
+              <ul className='px-3'>
                 <li className='flex'>
                   <img src={UserColor} width={20} alt="" />
                   <div className="ms-3 text-sm">Candles</div>
@@ -135,7 +135,7 @@ const Navbar = () => {
                   <div className="ms-3 text-sm  ">Silk Accessories</div>
                 </li>
               </ul>
-              <ul className='mt-6'>
+              <ul className='mt-6 p-4 pb-5 bg-sign-in'>
                 <li className='mt-1 hover:underline hover:underline-offset-2' >Value of the Day</li>
                 <li className='mt-1 hover:underline hover:underline-offset-2' >Top 100 Offers</li>
                 <li className='mt-1 hover:underline hover:underline-offset-2' >New Arrivals</li>
@@ -194,7 +194,7 @@ const Navbar = () => {
                 <span className='font-semibold text-sm ' >Pages</span>
                 <img src={Dropdown} width={20} alt="123" />
               </div>
-              <div className="dropdown-cnt  ">
+              <div className="dropdown-cnt ps-10 pt-8 ">
                 <div className="flex ">
                   <ul className='w-52'>
                     <h3 className='font-semibold'>PAGE LAYOUT </h3>
@@ -230,9 +230,9 @@ const Navbar = () => {
                 <img src={Dropdown} width={20} alt="123" />
               </div>
               <div className="dropdown-cnt ">
-                <ul className='w-32'>
+                <ul className='w-52'>
                   <li className='li-move' ><Link to='/Blog'>Blog</Link></li>
-                  <li className='li-move' >Blog Details</li>
+                  <li className='li-move' > <Link to='/Blogdetails'>Blog Details</Link> </li>
                 </ul>
               </div>
             </div>

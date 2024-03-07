@@ -11,7 +11,6 @@ import ClockNinico from '../../../assets/ClockNinico.svg'
 import CommentNinico from '../../../assets/commentNinico.svg'
 import BlogTwo from '../../../assets/BlogTwo.jpeg'
 import BlogThree from '../../../assets/BlogThree.jpeg'
-import BlogFour from '../../../assets/BlogFour.jpg'
 import Arrow from '../../../assets/Arrow.svg'
 
 const Blog = () => {
@@ -100,7 +99,7 @@ const Blog = () => {
                         requirements of specialists in the various fields of science and engineering. A physics laboratory
                     </div>
                     <button className='mt-7 py-3 px-8 rounded-lg text-white font-semibold bg-ninico'>Read more</button>
-                    <img src={BlogFour} className='mt-16 rounded-lg' alt="" />
+                    <img src={BlogOne} className='mt-16 rounded-lg' alt="" />
                     <div className="mt-5 flex ">
                         <div className="flex">
                             <img src={UserNinico} width={20} alt="" />
