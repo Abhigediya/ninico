@@ -35,8 +35,8 @@ const Blog = () => {
                 </div>
             </div>
 
-            <section className='mt-20 container mx-auto grid grid-cols-12 gap-20 '>
-                <div className="col-span-8 ">
+            <section className='mt-20 container mx-auto lg:grid lg:grid-cols-12 gap-20 '>
+                <div className="col-span-8  ">
                     <img src={BlogOne} className='rounded-xl' alt="" />
                     <div className="mt-5 flex ">
                         <div className="flex">

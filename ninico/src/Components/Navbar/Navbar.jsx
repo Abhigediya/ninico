@@ -17,7 +17,7 @@ import ShoePrint from '../../assets/ShoePrints.svg'
 import HappyIcon from '../../assets/HappyIcon.svg'
 import Futboll from '../../assets/Futboll.svg'
 import King from '../../assets/King.svg'
-import Gift from '../../assets/Gift.svg'
+// import Gift from '../../assets/Gift.svg'
 import UserColor from '../../assets/UserColor.svg'
 
 import { Link } from 'react-router-dom'

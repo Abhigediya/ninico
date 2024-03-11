@@ -73,7 +73,7 @@ const HomePage = () => {
         <SwiperSlide className='bg-cyan-500 h-40 '>Slide 4</SwiperSlide>
         <SwiperSlide className='bg-slate-400 h-40 '>Slide 5</SwiperSlide>
         </Swiper> */}
-
+    
       <TopBar />
       <div className="container mx-auto  ">
         <Navbar />
