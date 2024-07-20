@@ -1,10 +1,10 @@
 import React from 'react'
-import Logo from "../../assets/Logo.png";
-import Facebook from "../../assets/Facebook.svg";
-import Dribbble from "../../assets/Dribbble.svg";
-import Twitter from "../../assets/Twitter.svg";
-import Behance from "../../assets/Behance.svg";
-import Youtube from "../../assets/Youtube.svg";
+import LogoWhite from "../../assets/Logo-white.png";
+import FacebookWhite from "../../assets/FacebookWhite.svg";
+import DribbbleWhite from "../../assets/DribbleWhite.svg";
+import TwitterWhite from "../../assets/TwitterWhite.svg";
+import BehanceWhite from "../../assets/BehanceWhite.svg";
+import YoutubeWhite from "../../assets/YoutubeWhite.svg";
 import ArrowWhite from "../../assets/ArrowWhite.svg";
 import Call from "../../assets/Call.svg";
 import GooglePlay from "../../assets/GooglePlay.jpeg";
@@ -14,11 +14,11 @@ import FooterFourImg from "../../assets/FooterFourImg.png";
 const FooterTwo = () => {
   return (
     <>
-    <footer className="mt-10 pb-7  pt-16 md:px-0 xs:px-10    bg-[#040404] text-white ">
+      <footer className="mt-10 pb-7  pt-16 md:px-0 xs:px-10    bg-[#040404] text-white ">
         <div className="container mx-auto ">
           <div className="sm:flex lg:justify-between md:justify-start xs:block flex-wrap">
             <div className="w-64">
-              <img src={Logo} alt="" />
+              <img src={LogoWhite} alt="" />
               <div className="mt-5 text-white ">
                 Elegant pink origami design three dimensional view and decoration
                 co-exist. Great for adding a decorative touch to any room's decor.
@@ -46,50 +46,59 @@ const FooterTwo = () => {
             <ul className="lg:w-auto md:w-40">
               <li className="font-semibold text-white underline">Social Network</li>
               <li className=" flex items-center ">
-                <img src={Facebook} width={15} alt="" />
-                <span className=" ms-5 text-white">Facebook</span>
+                <img src={FacebookWhite} width={35} alt="" />
+                <span className=" ms-1 text-[#a0a0a0]">Facebook</span>
               </li>
-              <li className=" flex items-center">
-                <img src={Dribbble} width={20} alt="123" />
-                <span className=" ms-4 text-white">Dribbble</span>
+              <li className="ms-2 flex items-center">
+                <img src={DribbbleWhite} width={20} alt="123" />
+                <span className=" ms-3 text-[#a0a0a0]">Dribbble</span>
               </li>
-              <li className=" flex items-center">
-                <img src={Twitter} width={20} alt="123" />
-                <span className=" ms-4 text-white">Twitter</span>
+              <li className="ms-2 flex items-center">
+                <img src={TwitterWhite} width={20} alt="123" />
+                <span className=" ms-3 text-[#a0a0a0]">Twitter</span>
               </li>
-              <li className=" flex items-center">
-                <img src={Behance} width={20} alt="123" />
-                <span className=" ms-4 text-white">Behance</span>
+              <li className="ms-3 flex items-center">
+                <img src={BehanceWhite} width={20} alt="123" /> 
+                <span className=" ms-3 text-[#a0a0a0]">Behance</span>
               </li>
-              <li className=" flex items-center">
-                <img src={Youtube} width={20} alt="123" />
-                <span className=" ms-4 text-white">YouTube</span>
+              <li className="ms-3 flex items-center">
+                <img src={YoutubeWhite} width={20} alt="123" />
+                <span className=" ms-3 text-[#a0a0a0]">YouTube</span>
               </li>
             </ul>
 
-            <ul className="w-64">
-              <li className="font-semibold text-black underline ">
-                <a href="">Get NewSletter</a>
-              </li>
-              <li className='text-white'>Get on the list and get 10% off your first order!</li>
-              <li>
-                {" "}
-                <input
-                  type="text"
-                  name=""
-                  className="w-60 h-14 p-4"
-                  placeholder="Enter amail address"
-                  id=""
-                />{" "}
-              </li>
-              <li className="mt-4 bg-ninico  flex justify-center items-center w-48  py-4 px-7 rounded-md text-white font-medium text-sm">
-                {" "}
-                <button className="flex">
-                  Subscribe Now{" "}
-                  <img src={ArrowWhite} className="ms-3" width={20} alt="" />{" "}
-                </button>{" "}
-              </li>
-            </ul>
+            <div className="w-72 mt-3">
+              <h1 className="font-bold text-white underline ">Popular Keywords</h1>
+              <div className="mt-2 flex ">
+                <span className='text-[#a0a0a0] '>Makeup</span>
+                <span className='ms-2 text-[#a0a0a0] border-s border-[#303030] ps-2 '>Dressses For Girls </span>
+                <span className='ms-2 text-[#a0a0a0] border-s px-2 border-e border-[#303030] '>T-Shirts </span>
+              </div>
+              <div className="mt-4 flex ">
+                <span className="text-[#a0a0a0]">Sandals</span>
+                <span className="ms-2 mx-3 ps-1   border-s border-[#303030] text-[#a0a0a0]">Headphones</span>
+                <span className="ps-1 pe-3 border-s border-e border-[#303030] text-[#a0a0a0]">Baby dolls</span>
+              </div>
+              <div className="mt-4 flex ">
+                <span className="text-[#a0a0a0]">Blazers </span>
+                <span className="ms-2 mx-3 ps-1   border-s border-[#303030] text-[#a0a0a0]">For Men</span>
+                <span className="ps-1 pe-3 border-s border-e border-[#303030] text-[#a0a0a0]">Handbags</span>
+              </div>
+              <div className="mt-4 flex ">
+                <span className="text-[#a0a0a0]">Ladies Wathces </span>
+                <span className="ms-2 mx-3 ps-1   border-s border-[#303030] text-[#a0a0a0]">Bags</span>
+                <span className="ps-1 pe-3 border-s border-e border-[#303030] text-[#a0a0a0]">Sport Shoes</span>
+              </div>
+              <div className="mt-4 flex ">
+                <span className="text-[#a0a0a0]">Reebok Shoes </span>
+                <span className="ms-2 mx-3 ps-1   border-s border-[#303030] text-[#a0a0a0]">Puma Shoes</span>
+                <span className="ps-1 pe-3 border-s border-e border-[#303030] text-[#a0a0a0]">Boxers</span>
+              </div>
+              <div className="mt-4 flex ">
+                <span className="text-[#a0a0a0]">Wallets</span>
+                <span className="ms-2 mx-3 ps-1 pe-3   border-s border-e border-[#303030] text-[#a0a0a0]">Tops</span>
+              </div>
+            </div>
           </div>
 
           <div className="border-b border-slate-300 my-10 px-24"></div>
@@ -132,7 +141,7 @@ const FooterTwo = () => {
           </div>
         </div>
       </div>
-      
+
     </>
   )
 }

@@ -16,12 +16,12 @@ const Footer = () => {
     <>
       {/* <div className="/"> */}
 
-      <footer className="mt-10 pb-7  pt-16 md:px-0 xs:px-10    bg-footer text-footer-3 ">
+      <footer className="  pb-7  pt-16 md:px-0 xs:px-10  bg-footer text-footer-3 ">
         <div className="container mx-auto ">
           <div className="sm:flex lg:justify-between md:justify-start xs:block flex-wrap">
             <div className="w-64">
               <img src={Logo} alt="" />
-              <div className="mt-5  ">
+              <div className="mt-5 ">
                 Elegant pink origami design three dimensional view and decoration
                 co-exist. Great for adding a decorative touch to any room's decor.
               </div>

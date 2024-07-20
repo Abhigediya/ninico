@@ -73,7 +73,7 @@ const HomePage = () => {
         <SwiperSlide className='bg-cyan-500 h-40 '>Slide 4</SwiperSlide>
         <SwiperSlide className='bg-slate-400 h-40 '>Slide 5</SwiperSlide>
         </Swiper> */}
-    
+
       <TopBar />
       <div className="container mx-auto  ">
         <Navbar />
@@ -93,20 +93,15 @@ const HomePage = () => {
             }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper xl:w-[1100px] lg:w-[1000px] md:w-[720px] sm:w-[650px] sm:h-[450px] xs:h-[220px] xs:w-[300px]   "
+            className="mySwiper xl:h-[430px] xl:w-[1100px] lg:w-[1000px] md:w-[720px] sm:w-[650px] sm:h-[450px] xs:h-[220px] xs:w-[400px] rounded-md    "
           >
-            <SwiperSlide className="bg-red-300 h-40   ">
-              <img
-                src={SliderImgOne}
-                width={1200}
-                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
-                alt=""
-              />
+            <SwiperSlide className="h-[430px] ">
+              <img src={SliderImgOne} width={1200} className="md:h-[400px] lg:h-[430px] xs:h-52  " alt="" />
               <div className="absolute sm:top-24 left-10 xs:top-10  ">
                 <div className="text-ninico text-2xl xs:text-md">Accessories</div>
                 <h1 className="sm:text-5xl font-bold xs:text-md  ">
                   Up to <span className="text-ninico">40% Off </span> latest
-                  <br /> Creations{" "}
+                  <br /> Creations
                 </h1>
                 <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
@@ -114,18 +109,12 @@ const HomePage = () => {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="bg-red-400 h-40">
-              <img
-                src={SliderImgTwo}
-                width={1200}
-                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
-                alt=""
-              />
+            <SwiperSlide className=" h-[430px] ">
+              <img src={SliderImgTwo} className="  w-[1200px] md:h-[400px] lg:h-[430px] xs:h-52   " alt="" />
               <div className="absolute sm:top-24 left-10 xs:top-10 ">
                 <div className="text-ninico text-2xl xs:text-md ">Accessories</div>
                 <h1 className="sm:text-6xl font-bold xs:text-md ">
-                  Up to <span className="text-ninico">35% Off </span> latest
-                  Creations{" "}
+                  Up to <span className="text-ninico">35% Off </span> latest Creations
                 </h1>
                 <button className="bg-white flex items-center mt-5 px-8 py-3 rounded-md ">
                   <div className="text-sm font-semibold">Shop Now</div>
@@ -133,13 +122,8 @@ const HomePage = () => {
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="bg-yellow-400 h-40 ">
-              <img
-                src={SliderImgThree}
-                width={1200}
-                className="md:h-[400px] lg:h-[430px] xs:h-[200px]"
-                alt=""
-              />
+            <SwiperSlide className="bg-yellow-400 h-[430px]  ">
+              <img src={SliderImgThree} width={1200} className="md:h-[400px] lg:h-[430px] xs:h-52  " alt="" />
               <div className="absolute sm:top-24 left-10 xs:top-10   ">
                 <div className="text-ninico text-2xl xs:text-md">Accessories</div>
                 <h1 className="sm:text-5xl font-bold  xs:text-md ">
@@ -154,35 +138,24 @@ const HomePage = () => {
             </SwiperSlide>
           </Swiper>
 
-          <div className="xl:ms-3 md:ms-0  -mt-2 md:flex lg:block md:justify-between">
-            <div className="relative xl:me-0 lg:ms-2 lg:me-0   md:me-2 ">
-              <div className="overflow-hidden rounded-lg">
-                <div className="hover:scale-105 duration-75 ease-in         ">
-                  <img
-                    src={HandmadeImg}
-                    className=" md:h-[210px] sm:w-full mt-2 ms-0 p-0 "
-                    alt=""
-                  />
+          <div className="xl:ms-3 md:ms-0 -mt-2 md:flex lg:block md:justify-between">
+            <div className="relative xl:me-0 lg:ms-2 lg:me-0   md:me-2 group ">
+              <div className="overflow-hidden rounded-md ">
+                <div className="group-hover:scale-105  w-full duration-75 ease-in  overflow-hidden      ">
+                  <img src={HandmadeImg} className=" md:h-[210px] xs:h-[200px] xs:w-full mt-2 ms-0 p-0 rounded-lg overflow-hidden " alt="" />
                 </div>
               </div>
-
               <div className="absolute lg:top-[15px] lg:left-[15px] md:left-[30px] md:top-[40px] xs:top-[20px] xs:left-[20px] ">
                 <span className="text-ninico ">Hand made</span>
-                <h2 className="font-semibold text-xl pe-14">
-                  New Mordern Stylist Craft
-                </h2>
+                <h2 className="font-semibold text-xl pe-14"> New Mordern Stylist Craft </h2>
               </div>
             </div>
 
             <div className="mt-2 ">
-              <div className="relative  lg:ms-2 md:ms-2 ">
+              <div className="relative  lg:ms-2 md:ms-2 group ">
                 <div className="overflow-hidden  rounded-md">
-                  <div className="hover:scale-105 duration-75 ease-in   ">
-                    <img
-                      src={PopularImg}
-                      alt="123"
-                      className=" md:h-[210px] sm:w-full  ms-0 p-0"
-                    />
+                  <div className="group-hover:scale-105 duration-75 ease-in   ">
+                    <img src={PopularImg} alt="123" className=" md:h-[210px] xs:h-[200px] xs:w-full  ms-0 p-0 rounded-lg " />
                   </div>
                 </div>
                 <div className="absolute lg:top-[15px] lg:left-[15px] md:left-[30px] md:top-[30px] xs:top-[20px] xs:left-[20px] ">
@@ -213,8 +186,8 @@ const HomePage = () => {
           </div>
 
           <div className="mt-10 flex xl:justify-between md:justify-start flex-wrap lg:flex-wrap md:flex-wrap  ">
-            
-            <div className=" w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
+
+            <div className=" w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10  ">
               <div className="ctg-img">
                 <img src={Table} alt="123" />
                 <div className=" ctg-num   ">20</div>
@@ -224,7 +197,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10 ">
               <div className="ctg-img">
                 <img src={FloorDriftwood} alt="123" />
                 <div className="  ctg-num  ">12</div>
@@ -234,7 +207,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10 ">
               <div className="ctg-img">
                 <img src={ChristmanTree} alt="123" />
                 <div className="  ctg-num   ">03</div>
@@ -244,7 +217,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10">
               <div className="ctg-img">
                 <img src={BluetoothSpeaker} alt="123" />
                 <div className=" ctg-num   ">09</div>
@@ -254,7 +227,7 @@ const HomePage = () => {
 
             <div className="border-s  border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5  ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10  ">
               <div className="bg-slate-100 relative p-10  rounded-full w-32  mx-auto">
                 <img src={Receivers} alt="123" />
                 <div className="  ctg-num  ">10</div>
@@ -264,7 +237,7 @@ const HomePage = () => {
 
             <div className="border-s border-slate-200 h-48 hidden xl:block "></div>
 
-            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 ">
+            <div className="w-36 group xs:mt-10 lg:mt-0 xl:ms-0 md:ms-5 xs:ms-10 ">
               <div className="ctg-img">
                 <img src={Appetizer} alt="123" />
                 <div className="  ctg-num  ">05</div>
@@ -423,7 +396,6 @@ const HomePage = () => {
 
           <div className="">
             <Swiper
-
               spaceBetween={30}
               // freeMode={true}
               autoplay={{
@@ -440,14 +412,14 @@ const HomePage = () => {
                   slidesPerView: 3,
                   spaceBetween: 40,
                 },
-                1024:{
+                1024: {
                   slidesPerView: 4,
-                  spaceBetween:20,
+                  spaceBetween: 20,
                 },
 
-                1280:{
-                  slidesPerView:5,
-                  spaceBetween:20,
+                1280: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
                 }
               }}
 
@@ -470,8 +442,6 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-
-
       <Footer />
     </>
   );

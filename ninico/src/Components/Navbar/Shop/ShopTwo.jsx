@@ -3,6 +3,7 @@ import TopBarTwo from "../../TopBar/TopBarTwo";
 import Navbar from "../Navbar";
 import ShopImage from "../../../assets/ShopImage.jpg";
 import PopularProductTwo from "../../PopularProduct/PopularProductTwo";
+import Footer from '../../Footer/Footer'
 
 import BarDots from '../../../assets/BarDots.svg'
 import Grid from '../../../assets/Grid.svg'
@@ -30,19 +31,16 @@ const ShopTwo = () => {
 
 
       <section className="container mx-auto mt-10 ">
-        <div className="  xl:flex justify-between">
-          <div className="">
-            <div className="md:flex justify-between  ">
-              <div className="">
-                <span>10</span>
-                <span>Item On List</span>
+        <div className="  xl:flex justify-between  ">
+          <div className="me-5">
+            <div className="md:flex justify-between items-center  ">
+              <div className="flex">
+                <h1 className="font-bold text-lg">10</h1>
+                <span className="ms-3 text-[#999999] text-lg">Item On List</span>
               </div>
               <div className="flex">
                 <select
-                  className="border border-shop-border focus:border focus:border-4 p-2 focus:border-sky-300 rounded-md"
-                  name=""
-                  id=""
-                >
+                  className="border border-shop-border focus:border focus:border-4 p-2 focus:border-sky-300 rounded-md" name="" id="" >
                   <option value="">Sort by (default)</option>
                   <option value="">Newest </option>
                   <option value="">Oldest</option>
@@ -50,9 +48,7 @@ const ShopTwo = () => {
 
                 <select
                   className="ms-3 border border-shop-border focus:border focus:border-4 p-2 focus:border-sky-300 rounded-md"
-                  name=""
-                  id=""
-                >
+                  name="" id="">
                   <option value="">All</option>
                   <option value="">10 per page</option>
                   <option value="">20 per page</option>
@@ -67,7 +63,8 @@ const ShopTwo = () => {
             </div>
               <PopularProductTwo />
           </div>
-          <div className="w-48 xl:ms-3 xl:mt-0   xs:mt-10">
+          
+          <div className="w-48 xl:ms-10 xl:mt-0   xs:mt-10">
             <div className="font-semibold">Category</div>
             <div className="border border-bdr-color"></div>
             <ul className="">
@@ -141,6 +138,8 @@ const ShopTwo = () => {
           </div>
         </div>
       </section>
+
+      <Footer/>
     </>
   );
 };

@@ -56,6 +56,7 @@ function App() {
           <Route path='/ComingSoon' element={<ComingSoon/>} ></Route>
           <Route path='/Blog' element={<Blog/>} ></Route>
           <Route path='/BlogDetails' element={<BlogDetails/>} ></Route>
+          <Route path='/Contact' element={<Contact/>} ></Route>
 
           
           {/* <Route path='/' element={} ></Route> */}

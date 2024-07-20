@@ -58,7 +58,9 @@ const ShopOne = () => {
 
         <PopularProduct />
       </section>
-      <Footer />
+      <div className="mt-10 ">
+        <Footer />
+      </div>
     </>
   )
 }

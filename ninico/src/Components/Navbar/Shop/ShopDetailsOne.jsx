@@ -2,6 +2,9 @@ import React from "react";
 import TopBarTwo from "../../TopBar/TopBarTwo";
 import Navbar from '../../Navbar/Navbar'
 import Footer from "../../Footer/Footer";
+import DetailsSectionOne from "./DetailsSectionOne";
+import DetailsSlider from "./DetailsSlider";
+import DetailsContent from "./DetailsContent";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -57,7 +60,7 @@ const ShopDetailsOne = () => {
             <div className="flex items-center text-lg  ">
               <div className="me-3">Home</div>
               <div className="border-b w-8 border-footer-3"></div>
-              <div className="ms-3 text-footer-3  ">Shop Details</div>  
+              <div className="ms-3 text-footer-3  ">Shop Details</div>
             </div>
             <div className="text-5xl mt-4 font-semibold">Shop Details</div>
           </div>
@@ -85,7 +88,7 @@ const ShopDetailsOne = () => {
           </div>
 
           <div className="md:flex  lg:mt-0 mt-16">
-            <div className="ms-6">
+            {/* <div className="ms-6">
               <div className="flex">
                 <span className="bg-red-100 font-semibold px-2 text-ninico">
                   Dress
@@ -140,19 +143,23 @@ const ShopDetailsOne = () => {
 
               <div className="flex mt-7 ">
 
-                <div className="   group-hover:block hover:h-4 border-cyan-300 border hover:w-4  rounded-full flex justify-center items-center hover:border-cyan-300 duration-100 ease-in-out ">
+                <div className="   group-hover:block hover:h-4 border-cyan-300 border hover:w-4  rounded-full flex 
+                justify-center items-center hover:border-cyan-300 duration-100 ease-in-out ">
                   <div className=" bg-cyan-300  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
                 </div>
 
-                <div className=" mx-1  group-hover:block  hover:h-4 border-red-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-red-600 duration-100 ease-in-out ">
+                <div className=" mx-1  group-hover:block  hover:h-4 border-red-600 border hover:w-4  rounded-full
+                 flex justify-center items-center hover:border-red-600 duration-100 ease-in-out ">
                   <div className=" bg-red-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
                 </div>
 
-                <div className="  group-hover:block hover:h-4 border-amber-600 border hover:w-4  rounded-full flex justify-center items-center hover:border-amber-500 duration-100 ease-in-out ">
+                <div className="  group-hover:block hover:h-4 border-amber-600 border hover:w-4  rounded-full 
+                flex justify-center items-center hover:border-amber-500 duration-100 ease-in-out ">
                   <div className=" bg-amber-600  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
                 </div>
 
-                <div className="  group-hover:block mx-1  hover:h-4 border-violet-400 border hover:w-4  rounded-full flex justify-center items-center hover:border-violet-400 duration-100 ease-in-out ">
+                <div className="  group-hover:block mx-1  hover:h-4 border-violet-400 border hover:w-4  rounded-full 
+                flex justify-center items-center hover:border-violet-400 duration-100 ease-in-out ">
                   <div className=" bg-violet-400  w-3 h-3 rounded-full hover:w-2   hover:h-2"></div>
                 </div>
               </div>
@@ -183,8 +190,8 @@ const ShopDetailsOne = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
+            </div> */}
+            <DetailsSectionOne />
             <div className="w-64 ms-4">
               <div className="border flex py-4 px-6 items-center border-bdr-color rounded-lg group  ">
                 <div className="me-5 group-hover:-mt-5 duration-1000 ">
@@ -218,7 +225,9 @@ const ShopDetailsOne = () => {
           </div>
         </div>
 
-        <div className="mt-10">
+        <DetailsContent />
+
+        {/* <div className="mt-10">
           <div className="flex justify-center font-semibold xs:text-sm md:text-base ">
             <div className="">Description</div>
             <div className="md:mx-24 xs:mx-4 ">Additional infromation  </div>
@@ -247,11 +256,11 @@ const ShopDetailsOne = () => {
               from secured consumer loans.
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
       <div className="mt-20 border-b border-bdr-color"></div>
 
-      <section className="container mx-auto mt-10">
+      {/* <section className="container mx-auto mt-10">
         <Swiper
 
           spaceBetween={30}
@@ -479,13 +488,9 @@ const ShopDetailsOne = () => {
 
 
 
-          {/* <SwiperSlide> <img className="rounded-md" src={NinicoShopImgOne} alt="" /></SwiperSlide>
-          <SwiperSlide> <img className="rounded-md" src={NinicoShopImgThree} alt="" /></SwiperSlide>
-          <SwiperSlide> <img className="rounded-md" src={NinicoShopImgFour} alt="" /></SwiperSlide>
-          <SwiperSlide> <img className="rounded-md" src={NinicoShopImgFive} alt="" /></SwiperSlide>
-          <SwiperSlide> <img className="rounded-md" src={NinicoShopImgSix} alt="" /></SwiperSlide> */}
-        </Swiper>
-      </section>
+         </Swiper>
+      </section> */}
+      <DetailsSlider />
       <Footer />
     </>
   );

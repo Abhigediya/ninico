@@ -31,10 +31,10 @@ const Navbar = () => {
       <nav className=' mt-7 justify-between  items-center  flex justify-between    '>
 
         <div className="flex" >
-          <div className="mx-4 mt-1 lg:hidden  " onClick={() => setOpen(!open)} ><img src={Bar} width={30} alt="123" /></div>
+          <div className=" mt-1 lg:hidden  " onClick={() => setOpen(!open)} ><img src={Bar} width={30} alt="123" /></div>
           <div className="">
             <Link to="/">
-              <img src={Logo} alt="" />
+              <img src={Logo} className='ms-3' alt="" />
             </Link>
           </div>
         </div>
@@ -238,7 +238,7 @@ const Navbar = () => {
             </div>
 
             <div className="  ">
-              <div className="p-3 font-medium">Contact</div>
+              <div className="p-3 font-medium"><Link to='/Contact' >Contact</Link> </div>
             </div>
           </div>
         </div>

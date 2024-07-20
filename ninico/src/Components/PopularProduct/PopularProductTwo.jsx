@@ -33,8 +33,7 @@ const PopularProductTwo = () => {
         <>
             <section className="mt-14  ">
                 <div className="">
-    
-                    <div className="mt-10 grid  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-3  ">
+                    <div className="mt-10 grid  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-10  ">
                         {/* Bradley Burgress 2 -----> product 1 */}
                         <div className=" ">
                             <div className=" group  ">
